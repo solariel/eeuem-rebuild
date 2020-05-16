@@ -1,0 +1,10 @@
+uuid: 307184ba-bd60-49fc-979c-efeb04b5c3b2
+langcode: en
+status: true
+dependencies: {  }
+id: content_manager
+label: 'Content Manager'
+weight: 3
+is_admin: null
+permissions:
+  - 'use text format full_html'
