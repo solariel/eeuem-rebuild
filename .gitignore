@@ -10,13 +10,14 @@
 # Ignore sensitive information
 # /web/sites/*/settings.php
 /web/sites/*/settings.local.php
-# /web/sites/*/services.php
-/web/sites/*/services.local.php
+# /web/sites/*/services.yml
+/web/sites/*/services.local.yml
 
 # Ignore Drupal's file directory
 /web/sites/*/files/
 /web/files/
-
+/private/*
+!/private/.gitkeep
 # Ignore SimpleTest multi-site environment.
 /web/sites/simpletest
 
@@ -27,6 +28,6 @@
 /.env
 
 # Ignore other stuff
-/tmp/
-!/tmp/.deployment/
+/tmp/*
+!/tmp/.gitkeep
 /bin/
