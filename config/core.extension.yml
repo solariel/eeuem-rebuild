@@ -16,6 +16,7 @@ module:
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
+  eeuem_localization: 0
   entity_reference_revisions: 0
   field: 0
   field_ui: 0
@@ -51,6 +52,7 @@ module:
   text: 0
   token: 0
   toolbar: 0
+  transliterate_filenames: 0
   update: 0
   user: 0
   views_ui: 0
