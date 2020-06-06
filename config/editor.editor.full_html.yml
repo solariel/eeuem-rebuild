@@ -15,8 +15,18 @@ settings:
         -
           name: Formatting
           items:
+            - Styles
+            - '-'
             - Bold
             - Italic
+            - Underline
+            - Strike
+            - Superscript
+            - Subscript
+            - RemoveFormat
+            - '-'
+            - Format
+            - '-'
         -
           name: Links
           items:
@@ -32,10 +42,35 @@ settings:
           items:
             - Blockquote
             - DrupalImage
+            - DrupalMediaLibrary
         -
           name: Tools
           items:
             - Source
+            - '-'
+            - Undo
+            - Redo
+            - Cut
+            - '-'
+            - Copy
+            - Paste
+            - PasteText
+            - PasteFromWord
+            - SpecialChar
+            - '-'
+            - Table
+            - ShowBlocks
+            - Maximize
+        -
+          name: Alignment
+          items:
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
+            - '-'
+            - Outdent
+            - Indent
   plugins:
     stylescombo:
       styles: ''

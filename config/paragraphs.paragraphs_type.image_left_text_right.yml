@@ -1,0 +1,10 @@
+uuid: 8fa2923e-47bb-454a-be60-d8c4df5068f0
+langcode: en
+status: true
+dependencies: {  }
+id: image_left_text_right
+label: 'Image left | text right'
+icon_uuid: null
+icon_default: null
+description: 'Image and text in 2 columns. Image is to the left on desktop and above the text on mobile.'
+behavior_plugins: {  }

@@ -1,0 +1,10 @@
+uuid: b9945f9a-ffbf-4642-b10c-936171dc8d8f
+langcode: en
+status: true
+dependencies: {  }
+id: wysiwyg_text
+label: 'WYSIWYG text'
+icon_uuid: null
+icon_default: null
+description: 'Free WYSIWYG text'
+behavior_plugins: {  }

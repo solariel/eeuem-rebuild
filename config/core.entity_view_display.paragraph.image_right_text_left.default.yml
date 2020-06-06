@@ -1,0 +1,33 @@
+uuid: e8114bbc-8083-4158-81f8-325dbf41a466
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_right_text_left.field_right_image
+    - field.field.paragraph.image_right_text_left.field_text
+    - paragraphs.paragraphs_type.image_right_text_left
+  module:
+    - image
+    - text
+id: paragraph.image_right_text_left.default
+targetEntityType: paragraph
+bundle: image_right_text_left
+mode: default
+content:
+  field_right_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

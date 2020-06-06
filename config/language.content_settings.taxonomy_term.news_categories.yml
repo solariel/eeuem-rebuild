@@ -1,0 +1,11 @@
+uuid: dadd132f-45b3-4034-a636-b79453ecc399
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.news_categories
+id: taxonomy_term.news_categories
+target_entity_type_id: taxonomy_term
+target_bundle: news_categories
+default_langcode: current_interface
+language_alterable: true

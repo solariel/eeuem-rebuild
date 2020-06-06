@@ -1,0 +1,10 @@
+uuid: 46f3cd17-b724-4ae5-9398-554a71b671f1
+langcode: en
+status: true
+dependencies: {  }
+id: image_right_text_left
+label: 'Image right | text left'
+icon_uuid: null
+icon_default: null
+description: 'Paragraph with image and text. Image to the right on desktop, image on the top on mobile.'
+behavior_plugins: {  }

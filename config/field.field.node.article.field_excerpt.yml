@@ -1,0 +1,21 @@
+uuid: 738618b3-15db-4671-8052-c83bbb0a0988
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_excerpt
+    - node.type.article
+  module:
+    - text
+id: node.article.field_excerpt
+field_name: field_excerpt
+entity_type: node
+bundle: article
+label: Excerpt
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,10 @@
+uuid: f68a353e-1cc3-445a-b0f7-77cbd16d5bc2
+langcode: en
+status: true
+dependencies: {  }
+id: gallery
+label: Gallery
+icon_uuid: null
+icon_default: null
+description: 'Several images organized in a slideshow'
+behavior_plugins: {  }

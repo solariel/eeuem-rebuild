@@ -1,0 +1,10 @@
+uuid: ac5a123b-1067-4116-b823-8288881507db
+langcode: en
+status: true
+dependencies: {  }
+id: two_images
+label: 'Two images'
+icon_uuid: null
+icon_default: null
+description: 'Two images next to each other'
+behavior_plugins: {  }

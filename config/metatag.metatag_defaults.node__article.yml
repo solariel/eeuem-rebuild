@@ -1,0 +1,8 @@
+uuid: 1f8f43a5-e2d9-47e6-892b-e61c13ec44cb
+langcode: en
+status: true
+dependencies: {  }
+id: node__article
+label: 'Content: Article'
+tags:
+  og_image: '[node:field_teaser_image:entity:url]'

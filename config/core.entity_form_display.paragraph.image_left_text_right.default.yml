@@ -1,0 +1,36 @@
+uuid: 81fb45e6-ef48-4755-93a2-3b6798996ae1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_left_text_right.field_left_image
+    - field.field.paragraph.image_left_text_right.field_text
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.image_left_text_right
+  module:
+    - image
+    - text
+id: paragraph.image_left_text_right.default
+targetEntityType: paragraph
+bundle: image_left_text_right
+mode: default
+content:
+  field_left_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_text:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true
