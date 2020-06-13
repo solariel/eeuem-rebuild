@@ -1,0 +1,23 @@
+uuid: f18a7047-8c5d-4bf5-960b-6dc0e3dddc45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_is_important
+    - node.type.event
+id: node.event.field_is_important
+field_name: field_is_important
+entity_type: node
+bundle: event
+label: 'Is important'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,24 +1,24 @@
-uuid: 37026abb-c33c-44e7-a69d-f88a7b2fb08e
+uuid: 45ac993c-83b5-416d-bdf2-2864de357eca
 langcode: en
 status: true
 dependencies:
   module:
     - language
     - node
-id: albums
-label: Albums
+id: events
+label: Events
 type: 'canonical_entities:node'
-pattern: '/albums/[node:title]'
+pattern: 'events/[node:title]'
 selection_criteria:
-  c9f1f75a-c5e1-42a4-82da-5048bf0a8ee7:
+  78d3dab6-53fe-4825-aae2-ddc072f236fc:
     id: node_type
     bundles:
-      album: album
+      event: event
     negate: false
     context_mapping:
       node: node
-    uuid: c9f1f75a-c5e1-42a4-82da-5048bf0a8ee7
-  bc42746e-86b2-47aa-902f-ab37f3d65950:
+    uuid: 78d3dab6-53fe-4825-aae2-ddc072f236fc
+  5948411a-0498-4f05-a614-812df33f8e10:
     id: language
     langcodes:
       en: en
@@ -26,7 +26,7 @@ selection_criteria:
     negate: false
     context_mapping:
       language: 'node:langcode:language'
-    uuid: bc42746e-86b2-47aa-902f-ab37f3d65950
+    uuid: 5948411a-0498-4f05-a614-812df33f8e10
 selection_logic: and
 weight: -10
 relationships:

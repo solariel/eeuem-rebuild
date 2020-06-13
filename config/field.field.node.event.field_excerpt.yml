@@ -1,0 +1,21 @@
+uuid: 88ded632-ea27-4c9d-9665-25bcdf88b9da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_excerpt
+    - node.type.event
+  module:
+    - text
+id: node.event.field_excerpt
+field_name: field_excerpt
+entity_type: node
+bundle: event
+label: Excerpt
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
