@@ -1,0 +1,19 @@
+uuid: ffba0e2a-6bdf-48c5-8d19-e08283f60930
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+      - navigation
+    parent: 'main:'
+name: Album
+type: album
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

@@ -1,0 +1,11 @@
+uuid: 9d000b86-6040-4e9c-835f-8f212602ace7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.album
+id: node.album
+target_entity_type_id: node
+target_bundle: album
+default_langcode: current_interface
+language_alterable: true

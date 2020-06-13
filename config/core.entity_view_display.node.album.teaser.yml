@@ -1,0 +1,47 @@
+uuid: 5024ac2b-fb69-458e-a384-2c61731825e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.album.field_album_images
+    - field.field.node.album.field_date
+    - field.field.node.album.field_excerpt
+    - field.field.node.album.field_teaser_image
+    - node.type.album
+  module:
+    - datetime
+    - image
+    - user
+id: node.album.teaser
+targetEntityType: node
+bundle: album
+mode: teaser
+content:
+  field_date:
+    type: datetime_default
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+  field_teaser_image:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_album_images: true
+  field_excerpt: true
+  langcode: true

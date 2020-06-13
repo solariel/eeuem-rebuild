@@ -1,0 +1,34 @@
+uuid: 37026abb-c33c-44e7-a69d-f88a7b2fb08e
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: albums
+label: Albums
+type: 'canonical_entities:node'
+pattern: '/[node:menu-link:parents]/[node:title]'
+selection_criteria:
+  8d5f2fbf-d23b-43bf-980d-16647c0507b9:
+    id: node_type
+    bundles:
+      album: album
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 8d5f2fbf-d23b-43bf-980d-16647c0507b9
+  c6b73cd5-75f4-42c0-98bf-e9e3de1f0e5e:
+    id: language
+    langcodes:
+      en: en
+      uk: uk
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: c6b73cd5-75f4-42c0-98bf-e9e3de1f0e5e
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language
