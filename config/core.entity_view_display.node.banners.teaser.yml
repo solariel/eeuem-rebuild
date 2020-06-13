@@ -1,0 +1,25 @@
+uuid: d7335b4d-ceec-4a6e-8b6e-4a76ec430d28
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.banners.field_link
+    - field.field.node.banners.field_teaser_image
+    - node.type.banners
+  module:
+    - user
+id: node.banners.teaser
+targetEntityType: node
+bundle: banners
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_link: true
+  field_teaser_image: true
+  langcode: true

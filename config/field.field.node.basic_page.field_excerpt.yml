@@ -1,0 +1,21 @@
+uuid: 5099b0e7-75c9-424a-a4a4-a50f27baa538
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_excerpt
+    - node.type.basic_page
+  module:
+    - text
+id: node.basic_page.field_excerpt
+field_name: field_excerpt
+entity_type: node
+bundle: basic_page
+label: Excerpt
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

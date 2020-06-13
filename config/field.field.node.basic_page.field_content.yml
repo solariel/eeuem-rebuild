@@ -1,0 +1,47 @@
+uuid: 60022981-eb61-43b3-8241-df94ec729c6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.basic_page
+  module:
+    - entity_reference_revisions
+id: node.basic_page.field_content
+field_name: field_content
+entity_type: node
+bundle: basic_page
+label: Content
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles: null
+    target_bundles_drag_drop:
+      gallery:
+        weight: 8
+        enabled: false
+      image_full:
+        weight: 9
+        enabled: false
+      image_left_text_right:
+        weight: 10
+        enabled: false
+      image_right_text_left:
+        weight: 11
+        enabled: false
+      two_images:
+        weight: 12
+        enabled: false
+      video:
+        weight: 13
+        enabled: false
+      wysiwyg_text:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

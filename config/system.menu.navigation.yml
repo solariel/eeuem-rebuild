@@ -1,0 +1,8 @@
+uuid: 10c08e33-73b1-4679-a29d-8a7057869ad9
+langcode: uk
+status: true
+dependencies: {  }
+id: navigation
+label: Навігація
+description: 'Головне меню'
+locked: false
