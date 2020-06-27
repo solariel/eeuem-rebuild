@@ -1,0 +1,28 @@
+uuid: 4714238f-86e4-40ef-b0fd-80569f26febc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_these
+    - node.type.conference
+    - node.type.publication
+id: node.conference.field_these
+field_name: field_these
+entity_type: node
+bundle: conference
+label: These
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      publication: publication
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

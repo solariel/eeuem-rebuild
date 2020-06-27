@@ -1,0 +1,29 @@
+uuid: 4a71045c-b934-46c4-97b2-269012c8d654
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_conference_type
+    - node.type.conference
+    - taxonomy.vocabulary.conference_types
+id: node.conference.field_conference_type
+field_name: field_conference_type
+entity_type: node
+bundle: conference
+label: 'Conference type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      conference_types: conference_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

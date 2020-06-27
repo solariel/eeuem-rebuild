@@ -1,0 +1,21 @@
+uuid: d754e76f-d730-4170-9191-58de1e7ed7ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_place
+    - node.type.conference
+  module:
+    - text
+id: node.conference.field_place
+field_name: field_place
+entity_type: node
+bundle: conference
+label: Place
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

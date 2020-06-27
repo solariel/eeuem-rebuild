@@ -1,0 +1,38 @@
+uuid: 5923f37b-6199-4eed-8929-571e8e16b952
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_image
+    - node.type.publication
+  module:
+    - image
+id: node.publication.field_publication_image
+field_name: field_publication_image
+entity_type: node
+bundle: publication
+label: 'Publication image'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

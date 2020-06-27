@@ -1,0 +1,19 @@
+uuid: f10036af-dfb8-42aa-9060-63de6291b250
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_invitation
+field_name: field_invitation
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,8 @@
+uuid: 427321a8-f40b-4f6e-9bb8-276bd1ab5670
+langcode: und
+status: true
+dependencies: {  }
+name: 'Participation type'
+vid: participation_type
+description: ''
+weight: 0

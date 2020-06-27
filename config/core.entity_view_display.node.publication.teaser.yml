@@ -1,0 +1,43 @@
+uuid: 395f73ab-643a-45ff-a551-d5d14cfb86f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.publication.field_description
+    - field.field.node.publication.field_publication
+    - field.field.node.publication.field_publication_image
+    - node.type.publication
+  module:
+    - image
+    - text
+    - user
+id: node.publication.teaser
+targetEntityType: node
+bundle: publication
+mode: teaser
+content:
+  field_description:
+    type: text_default
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_publication_image:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: content
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_publication: true
+  langcode: true

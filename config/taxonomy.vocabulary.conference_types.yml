@@ -1,0 +1,8 @@
+uuid: 9a688dce-b6a9-4cda-80a2-4f4e6a5e2350
+langcode: und
+status: true
+dependencies: {  }
+name: 'Conference types'
+vid: conference_types
+description: ''
+weight: 0

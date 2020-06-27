@@ -71,6 +71,7 @@
         "drupal/core-composer-scaffold": "^8.9",
         "drupal/core-project-message": "^8.9",
         "drupal/core-recommended": "^8.9",
+        "drupal/inline_entity_form": "^1.0@RC",
         "drupal/lightgallery": "^1.1",
         "drupal/metatag": "^1.13",
         "drupal/module_filter": "^3.1",

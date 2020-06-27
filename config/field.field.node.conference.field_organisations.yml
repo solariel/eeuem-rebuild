@@ -1,0 +1,23 @@
+uuid: fbe554b4-393f-4cc5-97fa-e9d60eae0e12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organisations
+    - node.type.conference
+id: node.conference.field_organisations
+field_name: field_organisations
+entity_type: node
+bundle: conference
+label: Organisations
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'Міністерство освіти і науки України'
+  -
+    value: 'Східноєвропейський університет економіки і менеджменту'
+default_value_callback: ''
+settings: {  }
+field_type: string

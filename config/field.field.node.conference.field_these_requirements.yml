@@ -1,0 +1,21 @@
+uuid: 34097adc-05b3-4d27-bdbe-ae8772b2a331
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_these_requirements
+    - node.type.conference
+  module:
+    - text
+id: node.conference.field_these_requirements
+field_name: field_these_requirements
+entity_type: node
+bundle: conference
+label: 'These requirements'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

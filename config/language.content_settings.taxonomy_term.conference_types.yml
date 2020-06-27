@@ -1,0 +1,11 @@
+uuid: 5d810ae4-af48-4aeb-a68b-934ac05ae6f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.conference_types
+id: taxonomy_term.conference_types
+target_entity_type_id: taxonomy_term
+target_bundle: conference_types
+default_langcode: current_interface
+language_alterable: true

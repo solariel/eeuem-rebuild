@@ -1,0 +1,28 @@
+uuid: c001b674-a7d1-42d7-8c5a-5559b2f08484
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organizing_committee
+    - node.type.conference
+    - node.type.person
+id: node.conference.field_organizing_committee
+field_name: field_organizing_committee
+entity_type: node
+bundle: conference
+label: 'Organizing committee'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: 80fc58ad-d2e0-4a95-9a0e-fdb24c48cac5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_committee_website
+    - node.type.conference
+  module:
+    - link
+id: node.conference.field_committee_website
+field_name: field_committee_website
+entity_type: node
+bundle: conference
+label: 'Committee website'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

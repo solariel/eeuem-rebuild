@@ -1,0 +1,19 @@
+uuid: 9fb305b6-6e40-45ee-817a-3b79de979459
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sections
+    - node.type.conference
+id: node.conference.field_sections
+field_name: field_sections
+entity_type: node
+bundle: conference
+label: Sections
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

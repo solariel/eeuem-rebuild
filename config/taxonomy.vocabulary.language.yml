@@ -1,0 +1,8 @@
+uuid: f4f8cbbc-bd8c-47fb-af48-f0b1128e8732
+langcode: und
+status: true
+dependencies: {  }
+name: Languages
+vid: language
+description: 'Conference or publication language'
+weight: 0

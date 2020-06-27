@@ -1,0 +1,28 @@
+uuid: a5d30f57-e705-466d-94ee-d2035c85180a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_information_sheet
+    - media.type.document
+    - node.type.conference
+id: node.conference.field_information_sheet
+field_name: field_information_sheet
+entity_type: node
+bundle: conference
+label: 'Information sheet'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

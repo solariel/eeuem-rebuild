@@ -1,0 +1,19 @@
+uuid: 5baacffd-0aba-4c4d-8d59-7ac727cc36c0
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_committee_website
+field_name: field_committee_website
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,11 @@
+uuid: e9b25692-587d-4dea-a988-1463b3037315
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.conference
+id: node.conference
+target_entity_type_id: node
+target_bundle: conference
+default_langcode: current_interface
+language_alterable: true

@@ -1,0 +1,21 @@
+uuid: c59b3079-43d2-49bf-9cea-d00ee3d5dad6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_committee_phone_number
+    - node.type.conference
+  module:
+    - telephone
+id: node.conference.field_committee_phone_number
+field_name: field_committee_phone_number
+entity_type: node
+bundle: conference
+label: 'Committee phone numbers'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

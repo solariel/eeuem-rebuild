@@ -1,0 +1,21 @@
+uuid: 9f27c528-0dff-484f-8b3b-1283df9c0e68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sommittee_address
+    - node.type.conference
+  module:
+    - text
+id: node.conference.field_sommittee_address
+field_name: field_sommittee_address
+entity_type: node
+bundle: conference
+label: 'Сommittee address'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,20 @@
+uuid: 70f77055-c212-46c8-9e91-baaf6fd83f43
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_participation_type
+field_name: field_participation_type
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

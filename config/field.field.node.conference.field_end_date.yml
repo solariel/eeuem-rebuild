@@ -1,0 +1,21 @@
+uuid: 370884de-8941-4eb5-8257-dfeea4e8bb45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_end_date
+    - node.type.conference
+  module:
+    - datetime
+id: node.conference.field_end_date
+field_name: field_end_date
+entity_type: node
+bundle: conference
+label: 'End date'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

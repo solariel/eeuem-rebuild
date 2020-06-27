@@ -1,0 +1,21 @@
+uuid: 1fb51b2e-0d31-4853-a88b-baab9d8b2c2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_requirements
+    - node.type.conference
+  module:
+    - text
+id: node.conference.field_requirements
+field_name: field_requirements
+entity_type: node
+bundle: conference
+label: 'Participation requirements'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

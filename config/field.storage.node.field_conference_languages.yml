@@ -1,0 +1,20 @@
+uuid: baa9c421-c4a8-437b-88a9-d19e50990d5b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_conference_languages
+field_name: field_conference_languages
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

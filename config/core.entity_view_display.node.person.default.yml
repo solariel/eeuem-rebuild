@@ -1,0 +1,48 @@
+uuid: 72133ac6-1284-474c-b64c-f7caec3bdf03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.person.field_bio
+    - field.field.node.person.field_person_image
+    - field.field.node.person.field_position_and_degree
+    - node.type.person
+  module:
+    - image
+    - text
+    - user
+id: node.person.default
+targetEntityType: node
+bundle: person
+mode: default
+content:
+  field_bio:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_person_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_position_and_degree:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

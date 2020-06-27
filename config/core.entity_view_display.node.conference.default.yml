@@ -1,0 +1,218 @@
+uuid: cc1243c2-4143-4583-883a-fd4432f028bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.conference.field_committee_contacts
+    - field.field.node.conference.field_committee_email
+    - field.field.node.conference.field_committee_phone_number
+    - field.field.node.conference.field_committee_website
+    - field.field.node.conference.field_conference_languages
+    - field.field.node.conference.field_conference_type
+    - field.field.node.conference.field_end_date
+    - field.field.node.conference.field_information_sheet
+    - field.field.node.conference.field_invitation
+    - field.field.node.conference.field_organisations
+    - field.field.node.conference.field_organizing_committee
+    - field.field.node.conference.field_participation_type
+    - field.field.node.conference.field_place
+    - field.field.node.conference.field_request_template
+    - field.field.node.conference.field_requirements
+    - field.field.node.conference.field_sections
+    - field.field.node.conference.field_sommittee_address
+    - field.field.node.conference.field_start_date
+    - field.field.node.conference.field_these
+    - field.field.node.conference.field_these_requirements
+    - field.field.node.conference.field_these_sample
+    - node.type.conference
+  module:
+    - datetime
+    - image
+    - link
+    - telephone
+    - text
+    - user
+id: node.conference.default
+targetEntityType: node
+bundle: conference
+mode: default
+content:
+  field_committee_contacts:
+    weight: 14
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_committee_email:
+    weight: 12
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_committee_phone_number:
+    weight: 13
+    label: inline
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_committee_website:
+    weight: 11
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_conference_languages:
+    weight: 8
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_conference_type:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_end_date:
+    weight: 4
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_information_sheet:
+    type: entity_reference_entity_view
+    weight: 20
+    label: inline
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_invitation:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_organisations:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_organizing_committee:
+    weight: 9
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_participation_type:
+    weight: 7
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_place:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_request_template:
+    type: entity_reference_entity_view
+    weight: 19
+    label: inline
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_requirements:
+    weight: 16
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_sections:
+    weight: 15
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_sommittee_address:
+    weight: 10
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_start_date:
+    weight: 3
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_these:
+    weight: 21
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_these_requirements:
+    weight: 17
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_these_sample:
+    weight: 18
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,28 @@
+uuid: f1f7b98c-e821-47c2-ae22-e7495f3f0e03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_committee_contacts
+    - node.type.conference
+    - node.type.person
+id: node.conference.field_committee_contacts
+field_name: field_committee_contacts
+entity_type: node
+bundle: conference
+label: 'Committee contacts'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

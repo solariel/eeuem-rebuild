@@ -1,0 +1,11 @@
+uuid: 12892b73-cfd5-49f1-aef5-e32a598c218f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.participation_type
+id: taxonomy_term.participation_type
+target_entity_type_id: taxonomy_term
+target_bundle: participation_type
+default_langcode: current_interface
+language_alterable: true

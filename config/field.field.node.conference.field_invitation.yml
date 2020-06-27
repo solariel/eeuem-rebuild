@@ -1,0 +1,21 @@
+uuid: 0e754c4c-85ac-40d3-93db-6c593b75427e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_invitation
+    - node.type.conference
+  module:
+    - text
+id: node.conference.field_invitation
+field_name: field_invitation
+entity_type: node
+bundle: conference
+label: Invitation
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
