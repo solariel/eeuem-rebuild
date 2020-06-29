@@ -68,6 +68,7 @@
         "dinbror/blazy": "^1.8",
         "drupal/adminimal_admin_toolbar": "^1.11",
         "drupal/adminimal_theme": "^1.5",
+        "drupal/backup_migrate": "^5",
         "drupal/core-composer-scaffold": "^8.9",
         "drupal/core-project-message": "^8.9",
         "drupal/core-recommended": "^8.9",

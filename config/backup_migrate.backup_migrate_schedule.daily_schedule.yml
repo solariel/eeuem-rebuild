@@ -1,0 +1,8 @@
+uuid: 239614df-f7ba-45bf-8013-d7f1e33817c8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j-rE9LRcHAh5WPmOIg9glR7GKLw1CkvVnJvKNe376vM
+id: daily_schedule
+label: 'Daily Schedule'
