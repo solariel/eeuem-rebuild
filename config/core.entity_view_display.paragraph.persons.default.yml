@@ -1,0 +1,22 @@
+uuid: 9bef5795-2324-411a-b6e6-cb29a6ac6410
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.persons.field_person
+    - paragraphs.paragraphs_type.persons
+id: paragraph.persons.default
+targetEntityType: paragraph
+bundle: persons
+mode: default
+content:
+  field_person:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

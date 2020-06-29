@@ -1,0 +1,25 @@
+uuid: 057d60f7-95e6-4ae9-97d1-0d125ca97d30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.persons.field_person
+    - paragraphs.paragraphs_type.persons
+id: paragraph.persons.default
+targetEntityType: paragraph
+bundle: persons
+mode: default
+content:
+  field_person:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

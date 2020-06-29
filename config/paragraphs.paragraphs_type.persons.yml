@@ -1,0 +1,10 @@
+uuid: 0d3a593e-6fa1-4839-b18f-dfee3e76f387
+langcode: en
+status: true
+dependencies: {  }
+id: persons
+label: Persons
+icon_uuid: null
+icon_default: null
+description: 'List of persons'
+behavior_plugins: {  }
