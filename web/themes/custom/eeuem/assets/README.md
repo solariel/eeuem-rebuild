@@ -1,0 +1,1 @@
+# Production assets folder.

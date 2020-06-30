@@ -1,0 +1,20 @@
+uuid: a0ff9ede-f9e6-439b-8d9f-c6a37b949a88
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bootstrapper
+_core:
+  default_config_hash: PffmQ-ABSz5tFjWmVsR7NesunDnEivvopnJnBjl8KNE
+id: bootstrapper_local_actions
+theme: bootstrapper
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Первинні адміністративні дії'
+  provider: core
+  label_display: '0'
+visibility: {  }

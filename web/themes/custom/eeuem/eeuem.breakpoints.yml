@@ -1,0 +1,59 @@
+eeuem.screen.all:
+  label: All
+  mediaQuery: 'all and (min-width: 0px)'
+  weight: 0
+  multipliers:
+    - 1x
+  status: true
+  langcode: en
+  group: eeuem.screen
+
+eeuem.screen.xs:
+  label: XS (< 576px)
+  mediaQuery: 'all and (max-width: 575px)'
+  weight: 1
+  multipliers:
+    - 1x
+  status: true
+  langcode: en
+  group: eeuem.screen
+
+eeuem.screen.sm:
+  label: SM (576px - 767px)
+  mediaQuery: 'all and (min-width: 576px) and (max-width: 767px)'
+  weight: 2
+  multipliers:
+    - 1x
+  status: true
+  langcode: en
+  group: eeuem.screen
+
+eeuem.screen.md:
+  label: MD (768px - 991px)
+  mediaQuery: 'all and (min-width: 768px) and (max-width: 991px)'
+  weight: 3
+  multipliers:
+    - 1x
+  status: true
+  langcode: en
+  group: eeuem.screen
+
+eeuem.screen.lg:
+  label: LG (992px - 1199px)
+  mediaQuery: 'all and (min-width: 992px) and (max-width: 1199px)'
+  weight: 4
+  multipliers:
+    - 1x
+  status: true
+  langcode: en
+  group: eeuem.screen
+
+eeuem.screen.xl:
+  label: XL (> 1200px)
+  mediaQuery: 'all and (min-width: 1200px)'
+  weight: 5
+  multipliers:
+    - 1x
+  status: true
+  langcode: en
+  group: eeuem.screen

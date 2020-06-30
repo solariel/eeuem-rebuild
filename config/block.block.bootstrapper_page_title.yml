@@ -1,0 +1,20 @@
+uuid: edec6250-f154-4bd7-af8a-8233ac1893d6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bootstrapper
+_core:
+  default_config_hash: 8yptDf6WrXxeyevUz4nP5vfr7BtxQqCBMninhV2IJ1g
+id: bootstrapper_page_title
+theme: bootstrapper
+region: content
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Назва сторінки'
+  provider: core
+  label_display: '0'
+visibility: {  }

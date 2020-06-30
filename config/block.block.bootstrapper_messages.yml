@@ -1,0 +1,22 @@
+uuid: 66b53e41-75a9-4417-849f-5a9562499f3e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrapper
+_core:
+  default_config_hash: 5MNdk3fpMKx_xxBTcz2T11DL4XEU1H5SgHl8BsYdFsA
+id: bootstrapper_messages
+theme: bootstrapper
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Системні повідомлення'
+  provider: system
+  label_display: '0'
+visibility: {  }

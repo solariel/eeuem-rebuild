@@ -1,0 +1,20 @@
+uuid: 26c73de9-037e-4c90-a322-59d127af1caa
+langcode: en
+status: true
+dependencies:
+  theme:
+    - eeuem
+_core:
+  default_config_hash: 8yptDf6WrXxeyevUz4nP5vfr7BtxQqCBMninhV2IJ1g
+id: eeuem_page_title
+theme: eeuem
+region: content
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Назва сторінки'
+  provider: core
+  label_display: '0'
+visibility: {  }

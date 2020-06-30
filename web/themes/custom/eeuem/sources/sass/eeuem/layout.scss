@@ -1,0 +1,19 @@
+// ====================
+// https://www.drupal.org/node/1887918#separate-concerns
+//
+// Arrangement of elements on the page, including grid systems.
+//
+// Grid systems should be thought of as shelves. They contain content but are not content in themselves. You put up your
+// shelves then fill them with your stuff [i.e. components]. – Harry Roberts, CSS Guidelines
+// @see http://cssguidelin.es/
+// ====================
+
+// Import abstractions.
+@import 'abstractions/functions';
+@import 'abstractions/defaults';
+@import 'abstractions/variables';
+@import 'abstractions/overrides';
+@import 'abstractions/mixins';
+
+// Import sass items.
+// @import 'layout/{layout_name}';

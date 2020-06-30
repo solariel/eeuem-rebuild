@@ -1,0 +1,121 @@
+prepare:
+  description: |
+    Simple task for copying vendor libraries to sources.
+  tasks:
+    - clean:vendor
+
+vendors:
+  description: |
+    Simple task for copying vendor libraries to assets.
+  tasks:
+    - newer:copy:vendors
+
+libraries:
+  description: |
+    Simple task for copying libraries to assets.
+  tasks:
+    - newer:copy:libraries
+
+fonts:
+  description: |
+    Simple task for copying fonts from sources to assets.
+    Keep it for the feature fonts processing.
+  tasks:
+    - newer:copy:fonts
+
+images:
+  description: |
+    Task for development.
+    The task performs minification for images.
+  tasks:
+    - newer:imagemin
+    - newer:copy:images
+
+css:
+  description: |
+    Task for development.
+    The task performs minification for images, compilation of scss files in
+    development mode and process styles with postcss plugins.
+    You can use this task when you need only rebuild your css.
+    To run this task you should use 'grunt css' command.
+  tasks:
+    - images
+    - sass:dev
+    - newer:postcss:default
+    - newer:copy:css
+
+js:
+  description: |
+    Task for development.
+    The task checks javascript files for coding standards and makes some their
+    beautification.
+  tasks:
+    - newer:jshint
+    - newer:uglify:beauty
+    - newer:copy:js
+
+dev:
+  description: |
+    Task for development.
+    The main task for process theme in a development mode.
+    This task processes all subtasks for this theme: performs minification for
+    images, checks javascript files files for coding standards and makes their
+    beautification, compiles scss files in development mode and processes styles
+    with postcss plugins.
+  tasks:
+    - clean:tmp
+    - fonts
+    - js
+    - css
+    - prepare
+    - vendors
+    - libraries
+
+devcr:
+  description: |
+    Task for development.
+    Task is the same as 'dev' task, but it cleans tmp folder before assets
+    building and rebuilds drupal cache after.
+  tasks:
+    - clean:tmp
+    - dev
+    - clean:tmp
+    - shell:cr
+
+prod:
+  description: |
+    Task for production.
+    At whole this task is the same as 'dev' or 'devcr' tasks, but additionally
+    it updates 'Can I Use' database before launching other tasks and also it
+    includes subtasks for css/js minification and excludes subtasks for
+    generating css maps.
+    WARNING! Production assets will be fully cleaned and rebuilt!!!
+  tasks:
+    - shell:caniuse
+    - jshint
+    - clean:tmp
+    - imagemin
+    - uglify
+    - sass:prod
+    - postcss:nano
+    - clean:prod
+    - copy:fonts
+    - copy:images
+    - copy:js
+    - copy:css
+    - copy:vendors
+    - copy:libraries
+    - clean:tmp
+    - shell:cr
+
+cr:
+  description: |
+    This task is just an alias for the 'grunt shell:cr' task .
+    It's aslo the same as 'drush cr' command.
+  tasks:
+    - shell:cr
+
+default:
+  description: This is the alias for the 'dev' task.
+  tasks:
+    - dev

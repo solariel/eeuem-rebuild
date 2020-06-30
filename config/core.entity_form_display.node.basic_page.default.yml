@@ -9,8 +9,8 @@ dependencies:
     - image.style.thumbnail
     - node.type.basic_page
   module:
-    - entity_reference_revisions
     - image
+    - paragraphs
     - path
     - text
 id: node.basic_page.default
@@ -27,12 +27,14 @@ content:
   field_content:
     weight: 123
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: select
+      form_display_mode: default
+      default_paragraph_type: _none
     third_party_settings: {  }
-    type: entity_reference_revisions_autocomplete
+    type: entity_reference_paragraphs
     region: content
   field_excerpt:
     weight: 121

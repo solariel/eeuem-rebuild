@@ -1,0 +1,47 @@
+name: eeuem
+type: theme
+description: 'eeuem theme.'
+package: Core
+version: VERSION
+core: 8.x
+base theme: bootstrapper
+hidden: false
+
+libraries:
+  - eeuem/eeuem.fonts
+  - eeuem/eeuem.bootstrap.css
+  - eeuem/eeuem.css
+
+libraries-override:
+  bootstrapper/bootstrapper.fonts: false
+  bootstrapper/bootstrapper.bootstrap.css: false
+
+regions:
+  header_top: 'Header Top'
+  header_main: 'Header Main'
+  header_bottom: 'Header Bottom'
+  help: 'Help'
+  highlighted: 'Highlighted'
+  content_top: 'Content Top'
+  content: 'Content'
+  content_bottom: 'Content Bottom'
+  footer_top: 'Footer Top'
+  footer_main: 'Footer Main'
+  footer_bottom: 'Footer Bottom'
+  sidebar_first: 'Sidebar First'
+  sidebar_second: 'Sidebar Second'
+
+regions_hidden:
+  page_top: 'Page Top'
+  page_bottom: 'Page Bottom'
+
+features:
+  logo: true
+  name: true
+  slogan: true
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  main_menu: true
+  secondary_menu: true

@@ -1,0 +1,13 @@
+.item-list {
+  ul li {
+    list-style: none;
+
+    &::before {
+      content: "\2022";
+      color: $primary;
+      font-size: 1.5rem;
+      margin-left: -1.125rem;
+      margin-right: 0.425rem;
+    }
+  }
+}

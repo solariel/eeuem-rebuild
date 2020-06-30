@@ -1,0 +1,43 @@
+h1, h2, h3, h4, h5, h6 {
+  a {
+    color: $link-color;
+    text-decoration: none;
+    font-weight: inherit;
+  }
+}
+
+h1 {
+  color: $secondary;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h2 {
+  color: $secondary;
+  font-weight: bold;
+}
+
+h3 {
+  color: $secondary;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h5 {
+  color: $primary;
+  text-transform: uppercase;
+}
+
+h6 {
+  text-transform: uppercase;
+}
+
+@include font-size-populate($font-size-heading-map, 'xs');
+@include font-size-populate($font-size-heading-map, 'sm');
+@include font-size-populate($font-size-heading-map, 'md');
+@include font-size-populate($font-size-heading-map, 'lg');

@@ -1,0 +1,20 @@
+// ====================
+//  Mobile first.
+// ====================
+.section--header {
+
+}
+
+// ====================
+//  Tablet
+// ====================
+@include media-breakpoint-up(sm) {
+
+}
+
+// ====================
+//  Desktop
+// ====================
+@include media-breakpoint-up(lg) {
+
+}

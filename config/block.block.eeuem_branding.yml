@@ -1,0 +1,25 @@
+uuid: a8a39847-0c97-41f7-845d-989bd9d68a23
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - eeuem
+_core:
+  default_config_hash: fRKXNB91UxDvEMkzCR8ZBsawfC6Fqbme2gtobei3gu4
+id: eeuem_branding
+theme: eeuem
+region: header_top
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Брендинг сайту'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

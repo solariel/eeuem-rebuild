@@ -1,0 +1,48 @@
+{
+  "name": "eeuem",
+  "description": "Drupal 8 theme based on Bootstrap 4 framework.",
+  "private": true,
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "breakpoint-sass": "latest",
+    "caniuse-db": "latest",
+    "cssnano": "latest",
+    "doiuse": "latest",
+    "grunt": "latest",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-imagemin": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-newer": "latest",
+    "grunt-notify": "latest",
+    "grunt-postcss": "latest",
+    "grunt-sass": "latest",
+    "grunt-shell": "latest",
+    "hexdigest": "latest",
+    "jit-grunt": "latest",
+    "load-grunt-config": "latest",
+    "node-normalize-scss": "latest",
+    "node-sass": "latest",
+    "node-sass-asset-functions": "latest",
+    "node-sass-glob-importer": "latest",
+    "patch-package": "latest",
+    "postcss-pxtorem": "latest",
+    "postcss-reporter": "latest",
+    "postcss-safe-parser": "latest",
+    "postcss-sorting": "latest",
+    "postcss-sort-media-queries": "latest",
+    "postcss-will-change": "latest",
+    "sass-toolkit": "latest",
+    "time-grunt": "latest"
+  },
+  "scripts": {
+    "prepare": "patch-package"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}

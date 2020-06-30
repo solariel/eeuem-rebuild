@@ -1,0 +1,22 @@
+uuid: 05dc74e7-5d1d-4674-977e-427e24ebf417
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bootstrapper
+_core:
+  default_config_hash: c-06bbElRY5sKmglk74ppgTW93Et4-EJFyNiUZMb8JY
+id: bootstrapper_local_tasks
+theme: bootstrapper
+region: content
+weight: -20
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Вкладки
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

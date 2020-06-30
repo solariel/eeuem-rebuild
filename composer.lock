@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ef5a7b5a4973258824609245892241f5",
+    "content-hash": "0f9431763dfdcf813fda0f532b9ed714",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1925,6 +1925,52 @@
                 "source": "https://git.drupalcode.org/project/blazy",
                 "issues": "https://drupal.org/project/issues/blazy"
             }
+        },
+        {
+            "name": "drupal/bootstrapper",
+            "version": "dev-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bootstrapper.git",
+                "reference": "80e452451abd1c1527938f1a29fc77c0e944d297"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.x-dev",
+                    "datestamp": "1584710685",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "alphawebgroup",
+                    "homepage": "https://www.drupal.org/user/330008"
+                },
+                {
+                    "name": "rowen92",
+                    "homepage": "https://www.drupal.org/user/3550580"
+                }
+            ],
+            "description": "Bootstrapper theme.",
+            "homepage": "https://www.drupal.org/project/bootstrapper",
+            "support": {
+                "source": "https://git.drupalcode.org/project/bootstrapper"
+            },
+            "time": "2020-03-20T13:24:19+00:00"
         },
         {
             "name": "drupal/core",
@@ -7146,6 +7192,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/bootstrapper": 20,
         "drupal/inline_entity_form": 5,
         "drupal/styleguide": 15
     },

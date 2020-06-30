@@ -1,0 +1,19 @@
+# Ignore the node modules folder (created by 'npm install').
+/node_modules/
+
+# Ignore the node log file (created by 'npm install' if there was any error).
+/npm-debug.log
+
+# We absolutely don't want to have the .sass-cache in git.
+/.sass-cache/
+
+# Ignore vendor folder.
+/sources/vendor/
+!/sources/vendor/README.md
+
+# Ignore all temporary files /sources/tmp/ folder.
+/sources/tmp/
+!/sources/tmp/README.md
+!/sources/tmp/css/README.md
+!/sources/tmp/js/README.md
+!/sources/tmp/images/README.md

@@ -1,0 +1,29 @@
+eeuem.bootstrap.css:
+  css:
+    base:
+      assets/css/bootstrap.css: { weight: 10 }
+
+eeuem.fonts:
+  version: VERSION
+  css:
+    base:
+      'https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap': { type: external }
+      'https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap': { type: external }
+
+eeuem.js:
+  js:
+    assets/js/eeuem.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+
+eeuem.css:
+  css:
+    base:
+      assets/css/base.css: { weight: 10 }
+    layout:
+      assets/css/layout.css: { weight: 10 }
+    component:
+      assets/css/components.css: { weight: 10 }
+    theme:
+      assets/css/theme.css: { weight: 10 }
