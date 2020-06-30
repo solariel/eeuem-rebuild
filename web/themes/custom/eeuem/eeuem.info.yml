@@ -6,6 +6,7 @@ version: VERSION
 core: 8.x
 base theme: bootstrapper
 hidden: false
+logo: logo.png
 
 libraries:
   - eeuem/eeuem.fonts
