@@ -1,0 +1,56 @@
+.block--system-branding-block {
+  @include make-col-ready();
+}
+
+.site-branding {
+  .site-branding--logo {
+    display: block;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      display: inline-block;
+    }
+  }
+
+  img {
+    width: 10rem;
+
+    @include media-breakpoint-up(md) {
+      width: 7rem;
+    }
+  }
+
+  .site-branding--sitename {
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+
+    @include media-breakpoint-up(md) {
+      display: inline-block;
+      text-align: left;
+    }
+  }
+
+  .site-branding--name {
+    a {
+      color: palette-color('text', 'alternative');
+      text-transform: uppercase;
+      font-family: $font-family-secondary;
+      font-size: 1.5rem;
+      white-space: normal;
+
+      &:hover, &:focus, &:visited {
+        color: palette-color('text', 'alternative');
+        text-decoration: none;
+      }
+    }
+  }
+
+  .site-branding--slogan {
+    .text-muted {
+      color: palette-color('text', 'alternative')!important;
+      font-family: $font-family-secondary;
+      font-size: 1.2rem;
+    }
+  }
+}

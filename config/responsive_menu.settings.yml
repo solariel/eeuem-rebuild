@@ -1,13 +1,13 @@
 horizontal_menu: navigation
 horizontal_depth: 9
-off_canvas_menus: main
+off_canvas_menus: navigation
 horizontal_wrapping_element: nav
-horizontal_breakpoint: 'XL (> 1200px)'
-horizontal_media_query: 'all and (min-width: 1200px)'
+horizontal_breakpoint: 'LG (>= 992px)'
+horizontal_media_query: 'all and (min-width: 992px)'
 include_css: true
-off_canvas_position: left
-off_canvas_theme: theme-light
-pagedim: pagedim
+off_canvas_position: right
+off_canvas_theme: theme-dark
+pagedim: pagedim-black
 horizontal_superfish: true
 horizontal_superfish_delay: 300
 horizontal_superfish_speed: 100
@@ -22,3 +22,4 @@ wrapper_theme: true
 use_polyfills: true
 _core:
   default_config_hash: okIKWEN1iQUpeyr_635riDarUc-QmUOSwZ4nbJrYjTU
+modify_viewport: true

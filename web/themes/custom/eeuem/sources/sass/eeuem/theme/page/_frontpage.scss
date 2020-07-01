@@ -13,6 +13,11 @@
   }
 
   .block--views-block-frontpage-slider-block-frontpage-slider {
-    @include make-col(12);
+    width: 100%;
+    padding: 0;
+
+    @include media-breakpoint-up(md) {
+      @include make-col-ready();
+    }
   }
 }

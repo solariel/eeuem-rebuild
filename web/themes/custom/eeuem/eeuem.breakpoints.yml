@@ -38,9 +38,29 @@ eeuem.screen.md:
   langcode: en
   group: eeuem.screen
 
+eeuem.screen.md.plus:
+  label: MD (>= 768px)
+  mediaQuery: 'all and (min-width: 768px)'
+  weight: 3
+  multipliers:
+    - 1x
+  status: true
+  langcode: en
+  group: eeuem.screen
+
 eeuem.screen.lg:
   label: LG (992px - 1199px)
   mediaQuery: 'all and (min-width: 992px) and (max-width: 1199px)'
+  weight: 4
+  multipliers:
+    - 1x
+  status: true
+  langcode: en
+  group: eeuem.screen
+
+eeuem.screen.lg.plus:
+  label: LG (>= 992px)
+  mediaQuery: 'all and (min-width: 992px)'
   weight: 4
   multipliers:
     - 1x

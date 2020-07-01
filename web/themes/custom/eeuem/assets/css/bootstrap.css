@@ -7744,11 +7744,11 @@ a.text-dark:hover, a.text-dark:focus {
 @media (min-width: 36rem) {
   /* line 7, ../../contrib/bootstrapper/sources/vendor/bootstrap/scss/_grid.scss */
   .container {
-    max-width: 33.75rem;
+    max-width: 100%;
   }
   /* line 24, ../../contrib/bootstrapper/sources/vendor/bootstrap/scss/_grid.scss */
   .container, .container-sm {
-    max-width: 33.75rem;
+    max-width: 100%;
   }
   /* line 34, ../../contrib/bootstrapper/sources/vendor/bootstrap/scss/mixins/_grid-framework.scss */
   .col-sm {

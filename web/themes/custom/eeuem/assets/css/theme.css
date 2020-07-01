@@ -1,2 +1,258 @@
+/* line 2, sources/sass/eeuem/theme/page/_frontpage.scss */
+.page--pm-variant--frontpage-panels-variant-0 .layout--onecol {
+  width: 100%;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+  margin-right: auto;
+  margin-left: auto;
+}
 
+/* line 7, sources/sass/eeuem/theme/page/_frontpage.scss */
+.page--pm-variant--frontpage-panels-variant-0 .layout__region--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -0.9375rem;
+  margin-left: -0.9375rem;
+}
+
+/* line 11, sources/sass/eeuem/theme/page/_frontpage.scss */
+.page--pm-variant--frontpage-panels-variant-0 .block-region-content {
+  max-width: 100%;
+}
+
+/* line 15, sources/sass/eeuem/theme/page/_frontpage.scss */
+.page--pm-variant--frontpage-panels-variant-0 .block--views-block-frontpage-slider-block-frontpage-slider {
+  width: 100%;
+  padding: 0;
+}
+
+/* line 5, sources/sass/eeuem/theme/region/_header.scss */
+.section--header .region--header-top--wrapper {
+  background: url("../images/header-bg.png");
+  background-size: contain;
+}
+
+/* line 10, sources/sass/eeuem/theme/region/_header.scss */
+.section--header .region--header-top {
+  width: 100%;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 15, sources/sass/eeuem/theme/region/_header.scss */
+.section--header .region--header-top--body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -0.9375rem;
+  margin-left: -0.9375rem;
+}
+
+/* line 19, sources/sass/eeuem/theme/region/_header.scss */
+.section--header .region--header-bottom--wrapper {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* line 23, sources/sass/eeuem/theme/region/_header.scss */
+.section--header .region--header-bottom {
+  width: 100%;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 28, sources/sass/eeuem/theme/region/_header.scss */
+.section--header .region--header-bottom--body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -0.9375rem;
+  margin-left: -0.9375rem;
+}
+
+/* line 1, sources/sass/eeuem/theme/block/_site-branding.scss */
+.block--system-branding-block {
+  position: relative;
+  width: 100%;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+}
+
+/* line 6, sources/sass/eeuem/theme/block/_site-branding.scss */
+.site-branding .site-branding--logo {
+  display: block;
+  text-align: center;
+}
+
+/* line 15, sources/sass/eeuem/theme/block/_site-branding.scss */
+.site-branding img {
+  width: 10rem;
+}
+
+/* line 23, sources/sass/eeuem/theme/block/_site-branding.scss */
+.site-branding .site-branding--sitename {
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 35, sources/sass/eeuem/theme/block/_site-branding.scss */
+.site-branding .site-branding--name a {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: "Noto Serif", serif;
+  font-size: 1.5rem;
+  white-space: normal;
+}
+
+/* line 42, sources/sass/eeuem/theme/block/_site-branding.scss */
+.site-branding .site-branding--name a:hover, .site-branding .site-branding--name a:focus, .site-branding .site-branding--name a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* line 50, sources/sass/eeuem/theme/block/_site-branding.scss */
+.site-branding .site-branding--slogan .text-muted {
+  color: #FFFFFF !important;
+  font-family: "Noto Serif", serif;
+  font-size: 1.2rem;
+}
+
+/* line 1, sources/sass/eeuem/theme/block/_responsive-menu.scss */
+.responsive-menu-toggle-wrapper {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 4.125rem;
+  height: 3.125rem;
+}
+
+/* line 9, sources/sass/eeuem/theme/block/_responsive-menu.scss */
+.responsive-menu-toggle-wrapper .responsive-menu-toggle-icon {
+  width: 4.125rem;
+  height: 3.125rem;
+}
+
+/* line 13, sources/sass/eeuem/theme/block/_responsive-menu.scss */
+.responsive-menu-toggle-wrapper .responsive-menu-toggle-icon:before {
+  width: 1.875rem;
+  height: 0.25rem;
+  top: 0.8125rem;
+}
+
+/* line 19, sources/sass/eeuem/theme/block/_responsive-menu.scss */
+.responsive-menu-toggle-wrapper .responsive-menu-toggle-icon:after {
+  width: 1.875rem;
+  height: 0.25rem;
+  top: 2.1875rem;
+}
+
+/* line 26, sources/sass/eeuem/theme/block/_responsive-menu.scss */
+.responsive-menu-toggle-wrapper span.label {
+  display: none;
+}
+
+/* line 30, sources/sass/eeuem/theme/block/_responsive-menu.scss */
+.responsive-menu-toggle-wrapper span.icon {
+  width: 1.875rem;
+  height: 0.25rem;
+  top: 1.5rem;
+}
+
+/* line 36, sources/sass/eeuem/theme/block/_responsive-menu.scss */
+.user-logged-in .responsive-menu-toggle-wrapper {
+  top: 2.5rem;
+}
+
+@media (min-width: 36rem) {
+  /* line 2, sources/sass/eeuem/theme/page/_frontpage.scss */
+  .page--pm-variant--frontpage-panels-variant-0 .layout--onecol {
+    max-width: 100%;
+  }
+  /* line 10, sources/sass/eeuem/theme/region/_header.scss */
+  .section--header .region--header-top {
+    max-width: 100%;
+  }
+  /* line 23, sources/sass/eeuem/theme/region/_header.scss */
+  .section--header .region--header-bottom {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 48rem) {
+  /* line 2, sources/sass/eeuem/theme/page/_frontpage.scss */
+  .page--pm-variant--frontpage-panels-variant-0 .layout--onecol {
+    max-width: 45rem;
+  }
+  /* line 15, sources/sass/eeuem/theme/page/_frontpage.scss */
+  .page--pm-variant--frontpage-panels-variant-0 .block--views-block-frontpage-slider-block-frontpage-slider {
+    position: relative;
+    width: 100%;
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+  }
+  /* line 10, sources/sass/eeuem/theme/region/_header.scss */
+  .section--header .region--header-top {
+    max-width: 45rem;
+  }
+  /* line 23, sources/sass/eeuem/theme/region/_header.scss */
+  .section--header .region--header-bottom {
+    max-width: 45rem;
+  }
+  /* line 6, sources/sass/eeuem/theme/block/_site-branding.scss */
+  .site-branding .site-branding--logo {
+    display: inline-block;
+  }
+  /* line 15, sources/sass/eeuem/theme/block/_site-branding.scss */
+  .site-branding img {
+    width: 7rem;
+  }
+  /* line 23, sources/sass/eeuem/theme/block/_site-branding.scss */
+  .site-branding .site-branding--sitename {
+    display: inline-block;
+    text-align: left;
+  }
+}
+
+@media (min-width: 62rem) {
+  /* line 2, sources/sass/eeuem/theme/page/_frontpage.scss */
+  .page--pm-variant--frontpage-panels-variant-0 .layout--onecol {
+    max-width: 60rem;
+  }
+  /* line 10, sources/sass/eeuem/theme/region/_header.scss */
+  .section--header .region--header-top {
+    max-width: 60rem;
+  }
+  /* line 23, sources/sass/eeuem/theme/region/_header.scss */
+  .section--header .region--header-bottom {
+    max-width: 60rem;
+  }
+}
+
+@media (min-width: 75rem) {
+  /* line 2, sources/sass/eeuem/theme/page/_frontpage.scss */
+  .page--pm-variant--frontpage-panels-variant-0 .layout--onecol {
+    max-width: 73.125rem;
+  }
+  /* line 10, sources/sass/eeuem/theme/region/_header.scss */
+  .section--header .region--header-top {
+    max-width: 73.125rem;
+  }
+  /* line 23, sources/sass/eeuem/theme/region/_header.scss */
+  .section--header .region--header-bottom {
+    max-width: 73.125rem;
+  }
+}
 /*# sourceMappingURL=theme.css.map */

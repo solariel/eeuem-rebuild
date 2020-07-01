@@ -2,7 +2,32 @@
 //  Mobile first.
 // ====================
 .section--header {
+  .region--header-top--wrapper {
+    background: url('../images/header-bg.png');
+    background-size: contain;
+  }
 
+  .region--header-top {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+
+  .region--header-top--body {
+    @include make-row();
+  }
+
+  .region--header-bottom--wrapper {
+    box-shadow: $box-shadow;
+  }
+
+  .region--header-bottom {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+
+  .region--header-bottom--body {
+    @include make-row();
+  }
 }
 
 // ====================

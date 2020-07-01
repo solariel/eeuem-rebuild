@@ -15,14 +15,22 @@
 
     .slide__caption {
       position: absolute;
-      right: 6rem;
-      bottom: 3rem;
+      right: 4rem;
+      bottom: 2.5rem;
       width: 50%;
+
+      @include media-breakpoint-up(md) {
+        right: 6rem;
+        bottom: 3rem;
+      }
     }
 
     .views-field-title {
-      margin-bottom: 1rem;
       text-align: right;
+
+      @include media-breakpoint-up(sm) {
+        margin-bottom: 1rem;
+      }
 
       .field-content {
         display: inline-block;
@@ -30,12 +38,25 @@
         background: $primary;
         color: palette-color('text', 'alternative');
         text-transform: uppercase;
-        font-size: 2rem;
+        font-size: 1rem;
+
+        @include media-breakpoint-up(sm) {
+          font-size: 1.2rem;
+        }
+
+        @include media-breakpoint-up(md) {
+          font-size: 1.5rem;
+        }
       }
     }
 
     .views-field-field-slide-description {
       text-align: right;
+      display: none;
+
+      @include media-breakpoint-up(sm) {
+        display: block;
+      }
 
       .field-content {
         display: inline-block;

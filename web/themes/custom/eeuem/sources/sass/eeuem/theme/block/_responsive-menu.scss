@@ -1,0 +1,39 @@
+.responsive-menu-toggle-wrapper {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 66px;
+  height: 50px;
+
+  .responsive-menu-toggle-icon {
+    width: 66px;
+    height: 50px;
+
+    &:before {
+      width: 30px;
+      height: 4px;
+      top: 13px;
+    }
+
+    &:after {
+      width: 30px;
+      height: 4px;
+      top: 35px;
+    }
+  }
+
+  span.label {
+    display: none;
+  }
+
+  span.icon {
+    width: 30px;
+    height: 4px;
+    top: 24px;
+  }
+
+  .user-logged-in & {
+    top: 40px;
+  }
+}

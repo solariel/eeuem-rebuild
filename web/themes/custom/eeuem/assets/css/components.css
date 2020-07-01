@@ -298,45 +298,45 @@ label.option {
 /* line 16, sources/sass/eeuem/components/_frontpage-slider.scss */
 .view-display-id-block_frontpage_slider .slick__slide .slide__caption {
   position: absolute;
-  right: 6rem;
-  bottom: 3rem;
+  right: 4rem;
+  bottom: 2.5rem;
   width: 50%;
 }
 
-/* line 23, sources/sass/eeuem/components/_frontpage-slider.scss */
+/* line 28, sources/sass/eeuem/components/_frontpage-slider.scss */
 .view-display-id-block_frontpage_slider .slick__slide .views-field-title {
-  margin-bottom: 1rem;
   text-align: right;
 }
 
-/* line 27, sources/sass/eeuem/components/_frontpage-slider.scss */
+/* line 35, sources/sass/eeuem/components/_frontpage-slider.scss */
 .view-display-id-block_frontpage_slider .slick__slide .views-field-title .field-content {
   display: inline-block;
   padding: 1rem;
   background: #5087E8;
   color: #FFFFFF;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
-/* line 37, sources/sass/eeuem/components/_frontpage-slider.scss */
+/* line 53, sources/sass/eeuem/components/_frontpage-slider.scss */
 .view-display-id-block_frontpage_slider .slick__slide .views-field-field-slide-description {
   text-align: right;
+  display: none;
 }
 
-/* line 40, sources/sass/eeuem/components/_frontpage-slider.scss */
+/* line 61, sources/sass/eeuem/components/_frontpage-slider.scss */
 .view-display-id-block_frontpage_slider .slick__slide .views-field-field-slide-description .field-content {
   display: inline-block;
   padding: 1rem;
   background: #F7F9FB;
 }
 
-/* line 45, sources/sass/eeuem/components/_frontpage-slider.scss */
+/* line 66, sources/sass/eeuem/components/_frontpage-slider.scss */
 .view-display-id-block_frontpage_slider .slick__slide .views-field-field-slide-description .field-content p:last-child {
   margin-bottom: 0;
 }
 
-/* line 52, sources/sass/eeuem/components/_frontpage-slider.scss */
+/* line 73, sources/sass/eeuem/components/_frontpage-slider.scss */
 .view-display-id-block_frontpage_slider .slick-arrow {
   position: absolute;
   top: 50%;
@@ -347,25 +347,25 @@ label.option {
   font-size: 0;
 }
 
-/* line 60, sources/sass/eeuem/components/_frontpage-slider.scss */
+/* line 81, sources/sass/eeuem/components/_frontpage-slider.scss */
 .view-display-id-block_frontpage_slider .slick-arrow:focus, .view-display-id-block_frontpage_slider .slick-arrow:active, .view-display-id-block_frontpage_slider .slick-arrow:focus:active {
   outline: none;
   border: none;
 }
 
-/* line 66, sources/sass/eeuem/components/_frontpage-slider.scss */
+/* line 87, sources/sass/eeuem/components/_frontpage-slider.scss */
 .view-display-id-block_frontpage_slider .slick-prev {
   background: url("../images/arrow-left.png");
   left: 1rem;
 }
 
-/* line 71, sources/sass/eeuem/components/_frontpage-slider.scss */
+/* line 92, sources/sass/eeuem/components/_frontpage-slider.scss */
 .view-display-id-block_frontpage_slider .slick-next {
   background: url("../images/arrow-right.png");
   right: 1rem;
 }
 
-/* line 76, sources/sass/eeuem/components/_frontpage-slider.scss */
+/* line 97, sources/sass/eeuem/components/_frontpage-slider.scss */
 .view-display-id-block_frontpage_slider .slick-dots {
   position: absolute;
   bottom: 1rem;
@@ -377,12 +377,12 @@ label.option {
   margin: 0;
 }
 
-/* line 85, sources/sass/eeuem/components/_frontpage-slider.scss */
+/* line 106, sources/sass/eeuem/components/_frontpage-slider.scss */
 .view-display-id-block_frontpage_slider .slick-dots li {
   display: inline-block;
 }
 
-/* line 88, sources/sass/eeuem/components/_frontpage-slider.scss */
+/* line 109, sources/sass/eeuem/components/_frontpage-slider.scss */
 .view-display-id-block_frontpage_slider .slick-dots li button {
   font-size: 0;
   width: 1rem;
@@ -393,13 +393,13 @@ label.option {
   margin: 0 0.5rem;
 }
 
-/* line 97, sources/sass/eeuem/components/_frontpage-slider.scss */
+/* line 118, sources/sass/eeuem/components/_frontpage-slider.scss */
 .view-display-id-block_frontpage_slider .slick-dots li button:focus, .view-display-id-block_frontpage_slider .slick-dots li button:active, .view-display-id-block_frontpage_slider .slick-dots li button:focus:active {
   outline: none;
   border: none;
 }
 
-/* line 103, sources/sass/eeuem/components/_frontpage-slider.scss */
+/* line 124, sources/sass/eeuem/components/_frontpage-slider.scss */
 .view-display-id-block_frontpage_slider .slick-dots li.slick-active button {
   width: 1.2rem;
   height: 1.2rem;
@@ -472,6 +472,18 @@ label.option {
     font-size: 1rem;
     margin-bottom: 1rem;
   }
+  /* line 28, sources/sass/eeuem/components/_frontpage-slider.scss */
+  .view-display-id-block_frontpage_slider .slick__slide .views-field-title {
+    margin-bottom: 1rem;
+  }
+  /* line 35, sources/sass/eeuem/components/_frontpage-slider.scss */
+  .view-display-id-block_frontpage_slider .slick__slide .views-field-title .field-content {
+    font-size: 1.2rem;
+  }
+  /* line 53, sources/sass/eeuem/components/_frontpage-slider.scss */
+  .view-display-id-block_frontpage_slider .slick__slide .views-field-field-slide-description {
+    display: block;
+  }
 }
 
 @media (min-width: 48rem) {
@@ -539,6 +551,15 @@ label.option {
   .h6, .h6-md {
     font-size: 1rem;
     margin-bottom: 1rem;
+  }
+  /* line 16, sources/sass/eeuem/components/_frontpage-slider.scss */
+  .view-display-id-block_frontpage_slider .slick__slide .slide__caption {
+    right: 6rem;
+    bottom: 3rem;
+  }
+  /* line 35, sources/sass/eeuem/components/_frontpage-slider.scss */
+  .view-display-id-block_frontpage_slider .slick__slide .views-field-title .field-content {
+    font-size: 1.5rem;
   }
 }
 

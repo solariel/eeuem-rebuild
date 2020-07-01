@@ -14,3 +14,7 @@
 @import 'abstractions/mixins';
 
 // Import sass items.
+@import 'theme/page/frontpage';
+@import 'theme/region/header';
+@import 'theme/block/site-branding';
+@import 'theme/block/responsive-menu';
