@@ -1,0 +1,40 @@
+uuid: 36ab968f-322e-4b6c-b53a-67b64c49003c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.slide.field_slide_description
+    - field.field.node.slide.field_slide_image
+    - node.type.slide
+  module:
+    - image
+    - text
+    - user
+id: node.slide.default
+targetEntityType: node
+bundle: slide
+mode: default
+content:
+  field_slide_description:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_slide_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

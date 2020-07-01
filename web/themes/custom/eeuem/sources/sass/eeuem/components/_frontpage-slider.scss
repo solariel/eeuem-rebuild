@@ -1,0 +1,48 @@
+.view-display-id-block_frontpage_slider {
+  .slick__slide {
+    position: relative;
+
+    &:focus {
+      outline: none;
+    }
+
+    .media--slick {
+      padding-bottom: 0 !important;
+    }
+
+    .slide__caption {
+      position: absolute;
+      right: 6rem;
+      bottom: 3rem;
+      width: 50%;
+    }
+
+    .views-field-title {
+      margin-bottom: 1rem;
+      text-align: right;
+
+      .field-content {
+        display: inline-block;
+        padding: 1rem;
+        background: $primary;
+        color: palette-color('text', 'alternative');
+        text-transform: uppercase;
+        font-size: 2rem;
+      }
+    }
+
+    .views-field-field-slide-description {
+      text-align: right;
+
+      .field-content {
+        display: inline-block;
+        padding: 1rem;
+        background: $light;
+
+        p:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

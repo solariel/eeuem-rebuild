@@ -273,6 +273,62 @@ label.option {
   border-radius: 0 0.5rem 0 0;
 }
 
+/* line 2, sources/sass/eeuem/components/_frontpage-slider.scss */
+.view-display-id-block_frontpage_slider .slick__slide {
+  position: relative;
+}
+
+/* line 5, sources/sass/eeuem/components/_frontpage-slider.scss */
+.view-display-id-block_frontpage_slider .slick__slide:focus {
+  outline: none;
+}
+
+/* line 9, sources/sass/eeuem/components/_frontpage-slider.scss */
+.view-display-id-block_frontpage_slider .slick__slide .media--slick {
+  padding-bottom: 0 !important;
+}
+
+/* line 13, sources/sass/eeuem/components/_frontpage-slider.scss */
+.view-display-id-block_frontpage_slider .slick__slide .slide__caption {
+  position: absolute;
+  right: 6rem;
+  bottom: 3rem;
+  width: 50%;
+}
+
+/* line 20, sources/sass/eeuem/components/_frontpage-slider.scss */
+.view-display-id-block_frontpage_slider .slick__slide .views-field-title {
+  margin-bottom: 1rem;
+  text-align: right;
+}
+
+/* line 24, sources/sass/eeuem/components/_frontpage-slider.scss */
+.view-display-id-block_frontpage_slider .slick__slide .views-field-title .field-content {
+  display: inline-block;
+  padding: 1rem;
+  background: #5087E8;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+/* line 34, sources/sass/eeuem/components/_frontpage-slider.scss */
+.view-display-id-block_frontpage_slider .slick__slide .views-field-field-slide-description {
+  text-align: right;
+}
+
+/* line 37, sources/sass/eeuem/components/_frontpage-slider.scss */
+.view-display-id-block_frontpage_slider .slick__slide .views-field-field-slide-description .field-content {
+  display: inline-block;
+  padding: 1rem;
+  background: #F7F9FB;
+}
+
+/* line 42, sources/sass/eeuem/components/_frontpage-slider.scss */
+.view-display-id-block_frontpage_slider .slick__slide .views-field-field-slide-description .field-content p:last-child {
+  margin-bottom: 0;
+}
+
 @media (min-width: 36rem) {
   /* line 46, ../../contrib/bootstrapper/sources/sass/bootstrapper/abstractions/mixins/_font-size.scss */
   .h0, .h0-sm {

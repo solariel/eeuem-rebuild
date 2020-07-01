@@ -1,0 +1,15 @@
+uuid: 5b9221b7-de5f-495b-8cbb-62c1638bf4f3
+langcode: en
+status: true
+dependencies: {  }
+name: frontpage_slider
+label: 'Frontpage slider'
+effects:
+  ade9301a-ccb5-4282-881d-ea1e32727ee7:
+    uuid: ade9301a-ccb5-4282-881d-ea1e32727ee7
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1170
+      height: 600
+      anchor: center-center

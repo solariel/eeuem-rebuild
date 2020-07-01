@@ -78,6 +78,8 @@
         "drupal/lightgallery": "^1.1",
         "drupal/metatag": "^1.13",
         "drupal/module_filter": "^3.1",
+        "drupal/page_manager": "^4.0@beta",
+        "drupal/panels": "^4.6",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
         "drupal/slick": "^2.2",
@@ -151,7 +153,13 @@
         "patches": {
             "drupal/lightgallery" : {
                 "3028083": "https://www.drupal.org/files/issues/2019-01-24/3028083_6.patch"
+            },
+            "drupal/core": {
+                "2706241": "https://www.drupal.org/files/issues/2018-12-12/2706241-34.patch"
             }
         }
+    },
+    "require-dev": {
+        "mglaman/drupal-check": "^1.1"
     }
 }

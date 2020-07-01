@@ -1,2 +1,61 @@
+/* line 2, sources/sass/eeuem/layout/_frontpage.scss */
+.page--pm-variant--frontpage-panels-variant-0 .layout--onecol {
+  width: 100%;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+  margin-right: auto;
+  margin-left: auto;
+}
 
+/* line 7, sources/sass/eeuem/layout/_frontpage.scss */
+.page--pm-variant--frontpage-panels-variant-0 .layout__region--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -0.9375rem;
+  margin-left: -0.9375rem;
+}
+
+/* line 11, sources/sass/eeuem/layout/_frontpage.scss */
+.page--pm-variant--frontpage-panels-variant-0 .block-region-content {
+  max-width: 100%;
+}
+
+/* line 15, sources/sass/eeuem/layout/_frontpage.scss */
+.page--pm-variant--frontpage-panels-variant-0 .block--views-block-frontpage-slider-block-frontpage-slider {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 36rem) {
+  /* line 2, sources/sass/eeuem/layout/_frontpage.scss */
+  .page--pm-variant--frontpage-panels-variant-0 .layout--onecol {
+    max-width: 33.75rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  /* line 2, sources/sass/eeuem/layout/_frontpage.scss */
+  .page--pm-variant--frontpage-panels-variant-0 .layout--onecol {
+    max-width: 45rem;
+  }
+}
+
+@media (min-width: 62rem) {
+  /* line 2, sources/sass/eeuem/layout/_frontpage.scss */
+  .page--pm-variant--frontpage-panels-variant-0 .layout--onecol {
+    max-width: 60rem;
+  }
+}
+
+@media (min-width: 75rem) {
+  /* line 2, sources/sass/eeuem/layout/_frontpage.scss */
+  .page--pm-variant--frontpage-panels-variant-0 .layout--onecol {
+    max-width: 73.125rem;
+  }
+}
 /*# sourceMappingURL=layout.css.map */

@@ -1,0 +1,42 @@
+uuid: 857842e2-d3a8-43d1-935a-d78d7c11d5a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.frontpage
+    - views.view.frontpage_slider
+  module:
+    - panels
+    - views
+id: frontpage-panels_variant-0
+label: Frontpage
+variant: panels_variant
+variant_settings:
+  blocks:
+    c1b6e3e5-477d-4295-bad9-3dc472d291e4:
+      id: 'views_block:frontpage_slider-block_frontpage_slider'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 0
+      uuid: c1b6e3e5-477d-4295-bad9-3dc472d291e4
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 222e91cb-a16b-4d75-9dfe-83d1a1b5e44a
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings:
+    label: 'Front page'
+  page_title: 'Головна сторінка'
+  storage_type: page_manager
+  storage_id: frontpage-panels_variant-0
+  builder: standard
+page: frontpage
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

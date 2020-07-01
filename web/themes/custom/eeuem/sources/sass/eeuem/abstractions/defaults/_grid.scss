@@ -12,7 +12,7 @@ $container-max-widths: (
   xs: 540px,
   sm: 720px,
   md: 960px,
-  lg: 1140px
+  lg: 1170px
 );
 
 // Grid columns.
@@ -42,7 +42,7 @@ $grid-breakpoints-map: (
   ),
   lg: (
     breakpoint: 1200px,
-    container: 1140px,
+    container: 1170px,
     gutter: 30px,
   )
 );

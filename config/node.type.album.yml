@@ -6,10 +6,8 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main
-      - navigation
-    parent: 'main:'
+    available_menus: {  }
+    parent: ''
 name: Album
 type: album
 description: ''

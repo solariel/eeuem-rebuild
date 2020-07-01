@@ -11143,11 +11143,11 @@ a.text-dark:hover, a.text-dark:focus {
 @media (min-width: 75rem) {
   /* line 7, ../../contrib/bootstrapper/sources/vendor/bootstrap/scss/_grid.scss */
   .container {
-    max-width: 71.25rem;
+    max-width: 73.125rem;
   }
   /* line 24, ../../contrib/bootstrapper/sources/vendor/bootstrap/scss/_grid.scss */
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 71.25rem;
+    max-width: 73.125rem;
   }
   /* line 34, ../../contrib/bootstrapper/sources/vendor/bootstrap/scss/mixins/_grid-framework.scss */
   .col-xl {
@@ -11518,7 +11518,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
   /* line 240, ../../contrib/bootstrapper/sources/vendor/bootstrap/scss/_modal.scss */
   .modal-xl {
-    max-width: 71.25rem;
+    max-width: 73.125rem;
   }
   /* line 12, ../../contrib/bootstrapper/sources/vendor/bootstrap/scss/utilities/_display.scss */
   .d-xl-none {

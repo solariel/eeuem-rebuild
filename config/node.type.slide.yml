@@ -1,4 +1,4 @@
-uuid: a663225b-0e05-44d9-8155-9c5b857f3b32
+uuid: 6bbf69c2-79ba-4c36-b7f5-c3f7e34a9d46
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,9 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: Conference
-type: conference
-description: ''
+name: Slide
+type: slide
+description: 'Slides for the front page'
 help: ''
 new_revision: false
 preview_mode: 0

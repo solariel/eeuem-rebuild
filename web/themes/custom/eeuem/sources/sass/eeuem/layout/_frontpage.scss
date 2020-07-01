@@ -1,0 +1,18 @@
+.page--pm-variant--frontpage-panels-variant-0 {
+  .layout--onecol {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+
+  .layout__region--content {
+    @include make-row();
+  }
+
+  .block-region-content {
+    max-width: 100%;
+  }
+
+  .block--views-block-frontpage-slider-block-frontpage-slider {
+    @include make-col(12);
+  }
+}

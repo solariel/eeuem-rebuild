@@ -1,0 +1,21 @@
+uuid: 9bdfa0b1-ce6a-413b-aa80-65941f2754ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slide_description
+    - node.type.slide
+  module:
+    - text
+id: node.slide.field_slide_description
+field_name: field_slide_description
+entity_type: node
+bundle: slide
+label: 'Slide description'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
