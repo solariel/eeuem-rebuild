@@ -60,6 +60,30 @@
                 },
                 "type": "drupal-library"
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "joeldbirch/superfish",
+                "version": "1.7.10",
+                "dist": {
+                    "url": "https://github.com/joeldbirch/superfish/archive/v1.7.10.zip",
+                    "type": "zip"
+                },
+                "type": "drupal-library"
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "frdh/mmenu-js",
+                "version": "8.5.13",
+                "dist": {
+                    "url": "https://github.com/FrDH/mmenu-js/archive/v8.5.13.zip",
+                    "type": "zip"
+                },
+                "type": "drupal-library"
+            }
         }
     ],
     "require": {
@@ -82,11 +106,14 @@
         "drupal/panels": "^4.6",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
+        "drupal/responsive_menu": "^4.2",
         "drupal/slick": "^2.2",
         "drupal/slick_views": "^2.3",
         "drupal/styleguide": "^1.0@alpha",
         "drupal/transliterate_filenames": "^1.4",
         "drush/drush": "^10.2",
+        "frdh/mmenu-js": "^8.5",
+        "joeldbirch/superfish": "^1.7",
         "kenwheeler/slick": "^1.8"
     },
     "conflict": {
@@ -156,6 +183,10 @@
             },
             "drupal/core": {
                 "2706241": "https://www.drupal.org/files/issues/2018-12-12/2706241-34.patch"
+            },
+            "drupal/responsive_menu" : {
+                "3153145": "https://www.drupal.org/files/issues/2020-06-19/fix_chrome_bug-3153145-11.patch",
+                "fix-library-path": "patches/mmenu-fix-path.patch"
             }
         }
     },

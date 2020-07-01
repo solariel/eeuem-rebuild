@@ -1,0 +1,20 @@
+uuid: 9d7e8fa9-b298-453a-a0a1-eb015da55fe0
+langcode: en
+status: true
+dependencies:
+  module:
+    - responsive_menu
+  theme:
+    - eeuem
+id: horizontalmenu
+theme: eeuem
+region: header_bottom
+weight: 0
+provider: null
+plugin: responsive_menu_horizontal_menu
+settings:
+  id: responsive_menu_horizontal_menu
+  label: 'Horizontal menu'
+  provider: responsive_menu
+  label_display: '0'
+visibility: {  }

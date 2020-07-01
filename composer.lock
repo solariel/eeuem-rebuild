@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b097439bbf562dad9c77976234c296e9",
+    "content-hash": "45474834e6112d76b091e086c6eed7fa",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3321,6 +3321,56 @@
             }
         },
         {
+            "name": "drupal/responsive_menu",
+            "version": "4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/responsive_menu.git",
+                "reference": "4.2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/responsive_menu-4.2.0.zip",
+                "reference": "4.2.0",
+                "shasum": "4f5c7151d588aabd24f343db020cfaef8d877d29"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "4.2.0",
+                    "datestamp": "1592465858",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "patches_applied": {
+                    "3153145": "https://www.drupal.org/files/issues/2020-06-19/fix_chrome_bug-3153145-11.patch",
+                    "fix-library-path": "patches/mmenu-fix-path.patch"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Tancredi D'Onofrio (tanc)",
+                    "homepage": "https://www.drupal.org/u/tanc",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Provides a javascript based off-canvas responsive menu with depth. At wider browser widths it provides a horizontal menu capable of drop downs and flyouts",
+            "homepage": "https://drupal.org/project/responsive_menu",
+            "support": {
+                "source": "https://cgit.drupalcode.org/responsive_menu",
+                "issues": "https://drupal.org/project/issues/responsive_menu"
+            }
+        },
+        {
             "name": "drupal/slick",
             "version": "2.2.0",
             "source": {
@@ -3890,6 +3940,15 @@
             "time": "2020-02-13T22:36:52+00:00"
         },
         {
+            "name": "frdh/mmenu-js",
+            "version": "8.5.13",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/FrDH/mmenu-js/archive/v8.5.13.zip"
+            },
+            "type": "drupal-library"
+        },
+        {
             "name": "grasmash/expander",
             "version": "1.0.0",
             "source": {
@@ -4172,6 +4231,15 @@
                 "url"
             ],
             "time": "2019-07-01T23:21:34+00:00"
+        },
+        {
+            "name": "joeldbirch/superfish",
+            "version": "1.7.10",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/joeldbirch/superfish/archive/v1.7.10.zip"
+            },
+            "type": "drupal-library"
         },
         {
             "name": "kenwheeler/slick",
