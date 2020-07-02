@@ -406,6 +406,33 @@ label.option {
   opacity: 100%;
 }
 
+/* line 1, sources/sass/eeuem/components/_colorbox.scss */
+#cboxWrapper {
+  background: #2F4F89;
+}
+
+/* line 4, sources/sass/eeuem/components/_colorbox.scss */
+#cboxWrapper #cboxContent {
+  background: #2F4F89;
+}
+
+/* line 8, sources/sass/eeuem/components/_colorbox.scss */
+#cboxWrapper #cboxTitle {
+  background: #2F4F89;
+  color: #FFFFFF;
+  opacity: 60%;
+}
+
+/* line 14, sources/sass/eeuem/components/_colorbox.scss */
+#cboxWrapper #cboxClose {
+  width: 4rem;
+  background-image: none;
+  background-color: #secondary;
+  color: #FFFFFF;
+  font-weight: 1rem;
+  text-indent: 0;
+}
+
 @media (min-width: 36rem) {
   /* line 46, ../../contrib/bootstrapper/sources/sass/bootstrapper/abstractions/mixins/_font-size.scss */
   .h0, .h0-sm {

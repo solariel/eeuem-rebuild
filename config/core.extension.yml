@@ -11,6 +11,7 @@ module:
   bootstrap_layouts: 0
   breakpoint: 0
   ckeditor: 0
+  colorbox: 0
   config: 0
   config_translation: 0
   ctools: 0

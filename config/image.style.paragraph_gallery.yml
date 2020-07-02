@@ -8,7 +8,7 @@ effects:
   def98176-dca9-41b4-960d-10f5269514fd:
     uuid: def98176-dca9-41b4-960d-10f5269514fd
     id: image_scale_and_crop
-    weight: 1
+    weight: -9
     data:
       width: 520
       height: 325

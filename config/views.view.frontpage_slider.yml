@@ -65,7 +65,7 @@ display:
           layout: ''
           caption:
             title: title
-            field_slide_description: field_slide_description
+            field_slide_description: '0'
             field_slide_image: '0'
           optionset_thumbnail: ''
           skin_thumbnail: ''
@@ -94,7 +94,7 @@ display:
             randomize: '0'
             variableWidth: '0'
           cache: 0
-          current_view_mode: block_1
+          current_view_mode: block_frontpage_slider
           thumbnail_effect: ''
       row:
         type: fields

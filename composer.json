@@ -84,6 +84,18 @@
                 },
                 "type": "drupal-library"
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "jackmoore/colorbox",
+                "version": "1.6.4",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/jackmoore/colorbox/archive/1.6.4.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
@@ -95,6 +107,7 @@
         "drupal/backup_migrate": "^5",
         "drupal/bootstrap_layouts": "^5.2",
         "drupal/bootstrapper": "2.x-dev",
+        "drupal/colorbox": "^1.6",
         "drupal/core-composer-scaffold": "^8.9",
         "drupal/core-project-message": "^8.9",
         "drupal/core-recommended": "^8.9",
@@ -115,6 +128,7 @@
         "drupal/transliterate_filenames": "^1.4",
         "drush/drush": "^10.2",
         "frdh/mmenu-js": "^8.5",
+        "jackmoore/colorbox": "^1.6",
         "joeldbirch/superfish": "^1.7",
         "kenwheeler/slick": "^1.8"
     },

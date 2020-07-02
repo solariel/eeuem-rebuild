@@ -5,11 +5,11 @@ dependencies: {  }
 name: full_content_width_image
 label: 'Full content width image'
 effects:
-  60dc5e81-04e8-4a33-91a0-f7b588e97da0:
-    uuid: 60dc5e81-04e8-4a33-91a0-f7b588e97da0
-    id: image_scale_and_crop
-    weight: 1
+  cdaf413d-2851-49e8-83f0-f63f6b963812:
+    uuid: cdaf413d-2851-49e8-83f0-f63f6b963812
+    id: image_scale
+    weight: -10
     data:
       width: 820
       height: 512
-      anchor: center-center
+      upscale: false

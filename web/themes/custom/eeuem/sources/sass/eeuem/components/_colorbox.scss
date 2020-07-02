@@ -1,0 +1,22 @@
+#cboxWrapper {
+  background: $secondary;
+
+  #cboxContent {
+    background: $secondary;
+  }
+
+  #cboxTitle {
+    background: $secondary;
+    color: palette-color('text', 'alternative');
+    opacity: 60%;
+  }
+
+  #cboxClose {
+    width: 64px;
+    background-image: none;
+    background-color: #secondary;
+    color: palette-color('text', 'alternative');
+    font-weight: 1rem;
+    text-indent: 0;
+  }
+}

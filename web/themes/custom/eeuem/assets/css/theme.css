@@ -433,6 +433,8 @@
 
 /* line 15, sources/sass/eeuem/theme/node/_view-mode-default.scss */
 .node--view-mode-default .field--name-field-teaser-image img {
+  display: block;
+  margin: auto;
   border-radius: 0.5rem;
 }
 
@@ -444,6 +446,13 @@
 /* line 4, sources/sass/eeuem/theme/paragraph/_default.scss */
 .paragraph--view-mode--default *:last-child {
   margin-bottom: 0;
+}
+
+/* line 8, sources/sass/eeuem/theme/paragraph/_default.scss */
+.paragraph--view-mode--default img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* line 2, sources/sass/eeuem/theme/paragraph/_gallery.scss */
