@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.image_left_text_right.field_left_image
     - field.field.paragraph.image_left_text_right.field_text
+    - image.style.full_content_width_image
     - paragraphs.paragraphs_type.image_left_text_right
   module:
     - image
@@ -18,7 +19,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      image_style: full_content_width_image
       image_link: ''
     third_party_settings: {  }
     type: image

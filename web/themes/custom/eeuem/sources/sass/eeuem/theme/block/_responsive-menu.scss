@@ -2,7 +2,7 @@
   display: block;
   position: absolute;
   right: 0;
-  top: 0;
+  top: $spacer;
   width: 66px;
   height: 50px;
 
@@ -34,6 +34,110 @@
   }
 
   .user-logged-in & {
-    top: 40px;
+    top: $spacer * 3.5;
+  }
+}
+
+.mm-menu_offcanvas {
+  .mm-listview {
+    display: block;
+  }
+
+  .mm-btn_next {
+    padding-left: $spacer;
+  }
+
+  .mm-panels {
+    background: $secondary;
+    text-transform: uppercase;
+  }
+
+  .mm-panel {
+    background: $secondary;
+  }
+
+  .mm-navbar {
+    background: $secondary;
+  }
+
+  .mm-listitem:after {
+    border-color: $light;
+  }
+}
+
+.horizontal-menu {
+  & > li {
+    padding-top: 0;
+
+    &:nth-child(2) {
+      font-weight: 700;
+      color: $secondary;
+    }
+  }
+
+  & > li > a {
+    color: palette-color('text', 'main');
+    display: block;
+    padding-top: $spacer;
+    padding-right: $spacer;
+    padding-bottom: $spacer;
+    padding-left: $spacer;
+    text-transform: uppercase;
+
+    &:hover, &:active, &:hover:active, &:visited {
+      text-decoration: none;
+    }
+
+    &:hover{
+      background: $secondary;
+      color: palette-color('text', 'alternative');
+    }
+  }
+
+  & > li > span {
+    display: block;
+    padding-top: $spacer;
+    padding-right: $spacer;
+    padding-bottom: $spacer;
+    padding-left: $spacer;
+    text-transform: uppercase;
+
+    &:hover {
+      cursor: pointer;
+      background: $secondary;
+      color: palette-color('text', 'alternative');
+    }
+  }
+
+  & > li.menu-item--active-trail > a,
+  & > li.menu-item--active-trail > span {
+    color: $primary;
+
+    &:hover {
+      color: palette-color('text', 'alternative');
+    }
+  }
+
+  & > li.sfHover > span {
+    background: $secondary;
+    color: palette-color('text', 'alternative');
+  }
+
+  .menu.sub-nav {
+    margin: 0;
+    padding: $spacer;
+    background: $secondary;
+    border-radius: 0 $border-radius-lg 0 0;
+
+    .menu-item a {
+      color: palette-color('text', 'alternative');
+      text-transform: uppercase;
+      border-bottom: 1px solid $light;
+
+      &:hover, &:active, &:hover:active, &:visited {
+        color: palette-color('text', 'alternative');
+        text-decoration: none;
+      }
+    }
   }
 }

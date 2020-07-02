@@ -1,0 +1,19 @@
+.node--view-mode-default {
+  padding: $spacer;
+  margin-bottom: $spacer * 4;
+  border-radius: $border-radius-lg;
+  box-shadow: $box-shadow;
+
+  .node__title {
+    text-align: center;
+    text-transform: unset;
+  }
+
+  .field--name-field-teaser-image {
+    margin-bottom: $spacer;
+
+    img {
+      border-radius: $border-radius-lg;
+    }
+  }
+}

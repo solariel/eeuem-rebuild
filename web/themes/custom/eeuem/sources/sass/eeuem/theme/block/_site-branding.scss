@@ -1,5 +1,7 @@
 .block--system-branding-block {
   @include make-col-ready();
+  padding-top: $spacer;
+  padding-bottom: $spacer;
 }
 
 .site-branding {

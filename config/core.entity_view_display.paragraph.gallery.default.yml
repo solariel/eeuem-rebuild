@@ -17,7 +17,7 @@ content:
     label: hidden
     settings:
       lightgallery_core:
-        thumb_image_style: medium
+        thumb_image_style: paragraph_gallery
         lightgallery_image_style: ''
         title_source: alt
         mode: lg-slide

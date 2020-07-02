@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.image_full.field_full_image
     - field.field.paragraph.image_full.field_full_image_description
+    - image.style.full_content_width_image
     - paragraphs.paragraphs_type.image_full
   module:
     - image
@@ -17,8 +18,8 @@ content:
     weight: 0
     label: hidden
     settings:
+      image_style: full_content_width_image
       image_link: ''
-      image_style: ''
     third_party_settings: {  }
     type: image
     region: content

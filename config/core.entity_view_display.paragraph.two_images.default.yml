@@ -7,19 +7,61 @@ dependencies:
     - field.field.paragraph.two_images.field_left_image_description
     - field.field.paragraph.two_images.field_right_image
     - field.field.paragraph.two_images.field_right_image_description
+    - image.style.full_content_width_image
     - paragraphs.paragraphs_type.two_images
   module:
+    - field_group
     - image
+third_party_settings:
+  field_group:
+    group_left:
+      children:
+        - field_left_image
+        - field_left_image_description
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: group-left
+      label: left
+    group_right:
+      children:
+        - field_right_image
+        - field_right_image_description
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: group-right
+      label: right
 id: paragraph.two_images.default
 targetEntityType: paragraph
 bundle: two_images
 mode: default
 content:
   field_left_image:
-    weight: 0
+    weight: 1
     label: hidden
     settings:
-      image_style: ''
+      image_style: full_content_width_image
       image_link: ''
     third_party_settings: {  }
     type: image
@@ -32,10 +74,10 @@ content:
     type: basic_string
     region: content
   field_right_image:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
-      image_style: ''
+      image_style: full_content_width_image
       image_link: ''
     third_party_settings: {  }
     type: image

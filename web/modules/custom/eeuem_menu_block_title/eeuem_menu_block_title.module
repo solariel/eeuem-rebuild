@@ -1,0 +1,72 @@
+<?php
+/**
+ * @file
+ * Alters menu block titles to show the active menu item's parent.
+ */
+
+use Drupal\Core\Block\BlockPluginInterface;
+
+/**
+ * Implements hook_block_view_alter().
+ *
+ * Alters the titles of specified menu blocks to set the title to the parent
+ * menu link title.
+ */
+function eeuem_menu_block_title_block_view_alter(array &$build, BlockPluginInterface $block) {
+  if (_eeuem_menu_block_title_needs_modifying($build, $block)) {
+    $build['#pre_render'][] = 'eeuem_menu_block_title_add_link';
+    $menu_name = $block->getDerivativeId();
+    $build['#cache']['contexts'][] = 'route.menu_active_trails:' . $menu_name;
+  }
+}
+
+/**
+ * Helper function to determine whether a block needs modification.
+ *
+ * @param \Drupal\Core\Block\BlockPluginInterface $block
+ *   The block entity.
+ *
+ * @return bool
+ *   The boolean indicating whether this block needs modifying.
+ */
+function _eeuem_menu_block_title_needs_modifying($build, BlockPluginInterface $block) {
+  return $block->getBaseId() === 'system_menu_block';
+}
+
+/**
+ * Callback for block build pre_render.
+ *
+ * This iterates over all the menu items looking for the active trail. When
+ * found it will add the parent menu item as the block's label.
+ */
+function eeuem_menu_block_title_add_link(array $build) {
+  $items = [];
+
+  if (!isset($build['#derivative_plugin_id'])) {
+    return $build;
+  }
+
+  $menu_name = $build['#derivative_plugin_id'];
+
+  $menu_tree = \Drupal::menuTree();
+  // Build the typical default set of menu tree parameters.
+  $params = $menu_tree->getCurrentRouteMenuTreeParameters($menu_name);
+  // Load the tree based on this set of parameters.
+  $tree = $menu_tree->load($menu_name, $params);
+  // Build out the renderable array.
+  $menu = $menu_tree->build($tree);
+  // Start building the $items array to check for active menu.
+  $items = array_merge($items, $menu['#items']);
+
+  // Loop through each item checking for active menu trail.
+  foreach ($items as $item) {
+    if ($item['in_active_trail']) {
+      // If this item is in the active menu trail, set the block label to the
+      // menu title. Currently assuming there will only be one.
+      $build['#configuration']['label'] = $item['title'];
+      continue;
+    }
+  }
+
+  return $build;
+}

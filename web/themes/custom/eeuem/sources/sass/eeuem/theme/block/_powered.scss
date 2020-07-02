@@ -1,0 +1,15 @@
+.block--system-powered-by-block {
+  @include make-col-ready();
+  @include make-col(12);
+
+  color: palette-color('text', 'alternative');
+  text-align: center;
+
+  a {
+    color: palette-color('text', 'alternative');
+
+    &:hover, &:active, &:hover:active, &:visited {
+      color: palette-color('text', 'alternative');
+    }
+  }
+}

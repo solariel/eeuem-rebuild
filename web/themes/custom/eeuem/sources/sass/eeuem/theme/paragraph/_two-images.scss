@@ -1,0 +1,29 @@
+.paragraph--type--two-images.paragraph--view-mode--default {
+  @include make-row();
+
+  .group-left, .group-right {
+    @include make-col-ready();
+    @include make-col(12);
+
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+    }
+  }
+
+  .group-left {
+    margin-bottom: $spacer;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
+  }
+
+  .field--type-image {
+    margin-bottom: $spacer * 0.5;
+  }
+
+  .field--name-field-left-image-description,
+  .field--name-field-right-image-description {
+    text-align: center;
+  }
+}

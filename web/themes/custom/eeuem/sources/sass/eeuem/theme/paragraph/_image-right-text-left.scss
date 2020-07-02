@@ -1,0 +1,29 @@
+.paragraph--type--image-right-text-left.paragraph--view-mode--default {
+  @include clearfix;
+  @include make-row();
+  flex-direction: column-reverse;
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+
+  .field--name-field-right-image {
+    @include make-col-ready();
+    @include make-col(12);
+    margin-bottom: $spacer;
+
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+      margin-bottom: 0;
+    }
+  }
+
+  .field--name-field-text {
+    @include make-col-ready();
+    @include make-col(12);
+
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+    }
+  }
+}

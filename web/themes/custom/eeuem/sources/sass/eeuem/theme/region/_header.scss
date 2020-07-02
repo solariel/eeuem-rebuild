@@ -5,6 +5,11 @@
   .region--header-top--wrapper {
     background: url('../images/header-bg.png');
     background-size: contain;
+    box-shadow: $box-shadow;
+
+    @include media-breakpoint-up(lg) {
+      box-shadow: none;
+    }
   }
 
   .region--header-top {

@@ -10,6 +10,10 @@
 
   .block-region-content {
     max-width: 100%;
+
+    & > * {
+      margin-bottom: $spacer * 4;
+    }
   }
 
   .block--views-block-frontpage-slider-block-frontpage-slider {

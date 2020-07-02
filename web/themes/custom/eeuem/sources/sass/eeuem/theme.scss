@@ -15,6 +15,19 @@
 
 // Import sass items.
 @import 'theme/page/frontpage';
+@import 'theme/page/node-view';
 @import 'theme/region/header';
+@import 'theme/region/footer';
 @import 'theme/block/site-branding';
 @import 'theme/block/responsive-menu';
+@import 'theme/block/powered';
+@import 'theme/block/local-tasks';
+@import 'theme/block/navigation';
+@import 'theme/node/view-mode-default';
+@import 'theme/paragraph/default';
+@import 'theme/paragraph/gallery';
+@import 'theme/paragraph/image-full';
+@import 'theme/paragraph/image-left-text-right';
+@import 'theme/paragraph/image-right-text-left';
+@import 'theme/paragraph/video';
+@import 'theme/paragraph/two-images';

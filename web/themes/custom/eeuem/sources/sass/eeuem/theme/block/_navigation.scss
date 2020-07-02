@@ -1,0 +1,23 @@
+.block-menu.navigation {
+  h3 {
+    text-transform: uppercase;
+    margin-bottom: $spacer;
+  }
+
+  .nav {
+    li {
+      display: block;
+      width: 100%;
+
+      a {
+        padding-top: 0;
+        padding-left: 0;
+        padding-bottom: $spacer;
+      }
+
+      &:last-child a {
+        padding-bottom: 0;
+      }
+    }
+  }
+}

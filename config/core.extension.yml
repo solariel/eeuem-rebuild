@@ -8,6 +8,7 @@ module:
   big_pipe: 0
   blazy: 0
   block: 0
+  bootstrap_layouts: 0
   breakpoint: 0
   ckeditor: 0
   config: 0
@@ -19,8 +20,10 @@ module:
   dynamic_page_cache: 0
   editor: 0
   eeuem_localization: 0
+  eeuem_menu_block_title: 0
   entity_reference_revisions: 0
   field: 0
+  field_group: 0
   field_ui: 0
   file: 0
   file_delete: 0

@@ -2,7 +2,20 @@
 //  Mobile first.
 // ====================
 .section--footer {
+  .region--footer-bottom--wrapper {
+    background: $secondary;
+  }
 
+  .region--footer-bottom {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+
+  .region--footer-bottom--body {
+    @include make-row();
+    padding-top: $spacer;
+    padding-bottom: $spacer;
+  }
 }
 
 // ====================

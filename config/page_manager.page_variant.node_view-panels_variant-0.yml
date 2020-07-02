@@ -1,0 +1,76 @@
+uuid: 9dea6619-345d-498e-b4af-3b2cc20e35c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.node_view
+    - system.menu.navigation
+  module:
+    - ctools
+    - panels
+    - system
+id: node_view-panels_variant-0
+label: 'Node view'
+variant: panels_variant
+variant_settings:
+  blocks:
+    0f7c4195-5c08-4643-af8b-717531d6057f:
+      id: 'system_menu_block:navigation'
+      label: 'Меню розділу'
+      provider: system
+      label_display: visible
+      level: 2
+      depth: 0
+      expand_all_items: false
+      region: left
+      weight: 0
+      uuid: 0f7c4195-5c08-4643-af8b-717531d6057f
+      context_mapping: {  }
+    3237cc5b-fd5b-4a81-80ce-f424e7db6fed:
+      id: 'entity_view:node'
+      label: 'Entity view (Content)'
+      provider: ctools
+      label_display: '0'
+      view_mode: default
+      region: right
+      weight: 0
+      uuid: 3237cc5b-fd5b-4a81-80ce-f424e7db6fed
+      context_mapping:
+        entity: node
+  id: panels_variant
+  uuid: 816ad2aa-8a08-4c3b-afb9-f7a9abbcd832
+  label: null
+  weight: 0
+  layout: bs_2col
+  layout_settings:
+    label: ''
+    layout:
+      wrapper: div
+      classes:
+        row: row
+      add_layout_class: 1
+      attributes: ''
+    regions:
+      left:
+        wrapper: div
+        classes:
+          col-xs-12: col-xs-12
+          col-lg-3: col-lg-3
+        add_region_classes: 1
+        attributes: ''
+      right:
+        wrapper: div
+        classes:
+          col-xs-12: col-xs-12
+          col-lg-9: col-lg-9
+        add_region_classes: 1
+        attributes: ''
+  page_title: ''
+  storage_type: page_manager
+  storage_id: node_view-panels_variant-0
+  builder: standard
+page: node_view
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

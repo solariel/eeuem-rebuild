@@ -1,0 +1,6 @@
+name: EEUEM Menu Block Title
+description: Customizes menu block titles.
+package: EEUEM
+
+type: module
+core_version_requirement: ^8.8.0 || ^9.0
