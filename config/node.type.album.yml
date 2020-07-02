@@ -3,11 +3,16 @@ langcode: en
 status: true
 dependencies:
   module:
+    - menu_force
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus: {  }
-    parent: ''
+    available_menus:
+      - navigation
+    parent: 'navigation:menu_link_content:2af43e3b-432c-4259-8468-baff9bd4f45e'
+  menu_force:
+    menu_force: 0
+    menu_force_parent: 0
 name: Album
 type: album
 description: ''

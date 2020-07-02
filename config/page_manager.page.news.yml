@@ -1,0 +1,12 @@
+uuid: a2844cad-1aa1-4df9-85c8-c44d99e20479
+langcode: en
+status: true
+dependencies: {  }
+id: news
+label: News
+description: ''
+use_admin_theme: false
+path: /news
+access_logic: and
+access_conditions: {  }
+parameters: {  }

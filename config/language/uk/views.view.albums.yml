@@ -1,0 +1,36 @@
+label: Фотоальбоми
+display:
+  default:
+    display_title: Головний
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Застосувати
+          reset_button_label: Скинути
+          exposed_sorts_label: 'Сортувати за'
+          sort_asc_label: Вис
+          sort_desc_label: Низ
+      pager:
+        options:
+          tags:
+            first: '« Перша'
+            last: 'Остання »'
+          expose:
+            items_per_page_label: 'Матеріалів на сторінці'
+            items_per_page_options_all_label: '- Всі -'
+            offset_label: Зміщення
+      fields:
+        view_node:
+          text: Переглянути
+      title: Фотоальбоми
+  block_albums:
+    display_title: 'Блок фотоальбомів'
+  block_latest_albums:
+    display_title: 'Блок останніх фотоальбомів'
+    display_options:
+      fields:
+        view_node:
+          text: Переглянути
+      header:
+        area_text_custom:
+          content: '<a class="view-link btn btn-primary" href="/albums">Усі альбоми</a>'

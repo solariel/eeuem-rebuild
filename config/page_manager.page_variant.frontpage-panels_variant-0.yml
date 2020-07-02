@@ -4,7 +4,9 @@ status: true
 dependencies:
   config:
     - page_manager.page.frontpage
+    - views.view.albums
     - views.view.frontpage_slider
+    - views.view.news
   module:
     - panels
     - views
@@ -21,8 +23,30 @@ variant_settings:
       views_label: ''
       items_per_page: none
       region: content
-      weight: 0
+      weight: -1
       uuid: c1b6e3e5-477d-4295-bad9-3dc472d291e4
+      context_mapping: {  }
+    4a2487ff-f59e-45e6-9a2c-8486fc010585:
+      id: 'views_block:news-block_latest_news'
+      label: News
+      provider: views
+      label_display: visible
+      views_label: News
+      items_per_page: none
+      region: content
+      weight: 0
+      uuid: 4a2487ff-f59e-45e6-9a2c-8486fc010585
+      context_mapping: {  }
+    2864be06-bc3a-4719-842e-360256563526:
+      id: 'views_block:albums-block_latest_albums'
+      label: Albums
+      provider: views
+      label_display: visible
+      views_label: Albums
+      items_per_page: none
+      region: content
+      weight: 1
+      uuid: 2864be06-bc3a-4719-842e-360256563526
       context_mapping: {  }
   id: panels_variant
   uuid: 222e91cb-a16b-4d75-9dfe-83d1a1b5e44a

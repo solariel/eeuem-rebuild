@@ -1,0 +1,12 @@
+uuid: 748d9d44-5e2c-41b7-a540-216c8e9f1471
+langcode: en
+status: true
+dependencies: {  }
+id: albums
+label: Albums
+description: ''
+use_admin_theme: false
+path: /albums
+access_logic: and
+access_conditions: {  }
+parameters: {  }

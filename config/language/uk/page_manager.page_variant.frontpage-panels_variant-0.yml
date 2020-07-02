@@ -1,0 +1,12 @@
+label: 'Головна сторінка'
+variant_settings:
+  layout_settings:
+    label: 'Головна сторінка'
+  blocks:
+    4a2487ff-f59e-45e6-9a2c-8486fc010585:
+      label: Новини
+      views_label: Новини
+    2864be06-bc3a-4719-842e-360256563526:
+      label: Фотоальбоми
+      views_label: Фотоальбоми
+  label: ''

@@ -1,22 +1,23 @@
-uuid: 9dea6619-345d-498e-b4af-3b2cc20e35c7
+uuid: 74561887-b0f1-4b39-bb7b-3f2ec36baad9
 langcode: en
 status: true
 dependencies:
   config:
-    - page_manager.page.node_view
+    - page_manager.page.albums
     - system.menu.navigation
+    - views.view.albums
   module:
-    - ctools
     - panels
     - system
-id: node_view-panels_variant-0
-label: 'Node view'
+    - views
+id: albums-panels_variant-0
+label: Panels
 variant: panels_variant
 variant_settings:
   blocks:
-    0f7c4195-5c08-4643-af8b-717531d6057f:
+    72cfa59c-7445-40da-961c-b3b58e94f1d5:
       id: 'system_menu_block:navigation'
-      label: 'Меню розділу'
+      label: Навігація
       provider: system
       label_display: visible
       level: 2
@@ -24,21 +25,21 @@ variant_settings:
       expand_all_items: false
       region: left
       weight: 0
-      uuid: 0f7c4195-5c08-4643-af8b-717531d6057f
+      uuid: 72cfa59c-7445-40da-961c-b3b58e94f1d5
       context_mapping: {  }
-    3237cc5b-fd5b-4a81-80ce-f424e7db6fed:
-      id: 'entity_view:node'
-      label: 'Entity view (Content)'
-      provider: ctools
-      label_display: '0'
-      view_mode: default
+    d102459b-e631-4c02-be85-c0a0cfd43c3f:
+      id: 'views_block:albums-block_albums'
+      label: Albums
+      provider: views
+      label_display: visible
+      views_label: Albums
+      items_per_page: none
       region: right
       weight: 0
-      uuid: 3237cc5b-fd5b-4a81-80ce-f424e7db6fed
-      context_mapping:
-        entity: node
+      uuid: d102459b-e631-4c02-be85-c0a0cfd43c3f
+      context_mapping: {  }
   id: panels_variant
-  uuid: 816ad2aa-8a08-4c3b-afb9-f7a9abbcd832
+  uuid: 0677e363-201d-4839-bd33-0b0dd9139a4d
   label: null
   weight: 0
   layout: bs_2col
@@ -65,11 +66,11 @@ variant_settings:
           col-lg-9: col-lg-9
         add_region_classes: 1
         attributes: ''
-  page_title: '[node:title]'
+  page_title: Albums
   storage_type: page_manager
-  storage_id: node_view-panels_variant-0
+  storage_id: albums-panels_variant-0
   builder: standard
-page: node_view
+page: albums
 weight: 0
 selection_criteria: {  }
 selection_logic: and

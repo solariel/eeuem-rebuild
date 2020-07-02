@@ -11,7 +11,6 @@ dependencies:
   module:
     - datetime
     - lightgallery
-    - text
     - user
 id: node.album.default
 targetEntityType: node
@@ -19,11 +18,11 @@ bundle: album
 mode: default
 content:
   field_album_images:
-    weight: 3
+    weight: 2
     label: hidden
     settings:
       lightgallery_core:
-        thumb_image_style: medium
+        thumb_image_style: paragraph_gallery
         lightgallery_image_style: ''
         title_source: alt
         mode: lg-slide
@@ -71,18 +70,12 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_excerpt:
-    type: text_default
-    weight: 2
-    region: content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
   links:
     weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_excerpt: true
   field_teaser_image: true
   langcode: true

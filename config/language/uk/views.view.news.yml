@@ -1,0 +1,36 @@
+label: Новини
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Застосувати
+          reset_button_label: Скинути
+          exposed_sorts_label: 'Сортувати за'
+          sort_asc_label: Вис
+          sort_desc_label: Низ
+      pager:
+        options:
+          tags:
+            first: '« Перша'
+            last: 'Остання »'
+          expose:
+            items_per_page_label: 'Матеріалів на сторінці'
+            items_per_page_options_all_label: '- Всі -'
+            offset_label: Зміщення
+      fields:
+        view_node:
+          text: 'Читати далі'
+      title: Новини
+    display_title: Головний
+  block_latest_news:
+    display_title: 'Блок останніх новин'
+    display_options:
+      fields:
+        view_node:
+          text: 'Читати далі'
+      header:
+        area_text_custom:
+          content: '<a class="view-link btn btn-primary" href="/news">Усі новини</a>'
+  block_news:
+    display_title: 'Блок новин'

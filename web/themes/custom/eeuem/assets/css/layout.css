@@ -3,8 +3,10 @@
   position: relative;
 }
 
-/* line 6, sources/sass/eeuem/layout/_page.scss */
-.page--pm-variant--node-view-panels-variant-0 .region--content--body {
+/* line 8, sources/sass/eeuem/layout/_page.scss */
+.page--pm-variant--node-view-panels-variant-0 .region--content--body,
+.page--pm-variant--news-panels-variant-0 .region--content--body,
+.page--pm-variant--albums-panels-variant-0 .region--content--body {
   width: 100%;
   padding-right: 0.9375rem;
   padding-left: 0.9375rem;
@@ -18,29 +20,37 @@
 }
 
 @media (min-width: 36rem) {
-  /* line 6, sources/sass/eeuem/layout/_page.scss */
-  .page--pm-variant--node-view-panels-variant-0 .region--content--body {
+  /* line 8, sources/sass/eeuem/layout/_page.scss */
+  .page--pm-variant--node-view-panels-variant-0 .region--content--body,
+  .page--pm-variant--news-panels-variant-0 .region--content--body,
+  .page--pm-variant--albums-panels-variant-0 .region--content--body {
     max-width: 100%;
   }
 }
 
 @media (min-width: 48rem) {
-  /* line 6, sources/sass/eeuem/layout/_page.scss */
-  .page--pm-variant--node-view-panels-variant-0 .region--content--body {
+  /* line 8, sources/sass/eeuem/layout/_page.scss */
+  .page--pm-variant--node-view-panels-variant-0 .region--content--body,
+  .page--pm-variant--news-panels-variant-0 .region--content--body,
+  .page--pm-variant--albums-panels-variant-0 .region--content--body {
     max-width: 45rem;
   }
 }
 
 @media (min-width: 62rem) {
-  /* line 6, sources/sass/eeuem/layout/_page.scss */
-  .page--pm-variant--node-view-panels-variant-0 .region--content--body {
+  /* line 8, sources/sass/eeuem/layout/_page.scss */
+  .page--pm-variant--node-view-panels-variant-0 .region--content--body,
+  .page--pm-variant--news-panels-variant-0 .region--content--body,
+  .page--pm-variant--albums-panels-variant-0 .region--content--body {
     max-width: 60rem;
   }
 }
 
 @media (min-width: 75rem) {
-  /* line 6, sources/sass/eeuem/layout/_page.scss */
-  .page--pm-variant--node-view-panels-variant-0 .region--content--body {
+  /* line 8, sources/sass/eeuem/layout/_page.scss */
+  .page--pm-variant--node-view-panels-variant-0 .region--content--body,
+  .page--pm-variant--news-panels-variant-0 .region--content--body,
+  .page--pm-variant--albums-panels-variant-0 .region--content--body {
     max-width: 73.125rem;
   }
 }

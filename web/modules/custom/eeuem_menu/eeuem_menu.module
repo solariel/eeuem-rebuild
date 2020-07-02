@@ -1,10 +1,42 @@
 <?php
-/**
- * @file
- * Alters menu block titles to show the active menu item's parent.
- */
 
 use Drupal\Core\Block\BlockPluginInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\node\NodeInterface;
+
+/**
+ * Implements hook_ENTITY_TYPE_insert().
+ */
+function eeuem_menu_node_insert(NodeInterface $entity) {
+  _eeuem_menu_disable_menu_link($entity);
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_update().
+ */
+function eeuem_menu_node_update(NodeInterface $entity) {
+  _eeuem_menu_disable_menu_link($entity);
+}
+
+/**
+ * Disables associated menu link.
+ *
+ * @param \Drupal\node\NodeInterface $node
+ *   Node object.
+ *
+ * @throws \Drupal\Core\Entity\EntityStorageException
+ * @throws \Drupal\Core\TypedData\Exception\MissingDataException
+ */
+function _eeuem_menu_disable_menu_link(NodeInterface $node) {
+  if (in_array($node->bundle(), ['article', 'album'])) {
+    if ($node->hasField('menu_link') && $link = $node->get('menu_link')->first()) {
+      /** @var Drupal\menu_link_content\Entity\MenuLinkContent $link */
+      $link = $link->entity;
+      $link->setUnpublished();
+      $link->save();
+    }
+  }
+}
 
 /**
  * Implements hook_block_view_alter().
@@ -12,9 +44,9 @@ use Drupal\Core\Block\BlockPluginInterface;
  * Alters the titles of specified menu blocks to set the title to the parent
  * menu link title.
  */
-function eeuem_menu_block_title_block_view_alter(array &$build, BlockPluginInterface $block) {
-  if (_eeuem_menu_block_title_needs_modifying($build, $block)) {
-    $build['#pre_render'][] = 'eeuem_menu_block_title_add_link';
+function eeuem_menu_block_view_alter(array &$build, BlockPluginInterface $block) {
+  if (_eeuem_menu_needs_modifying($build, $block)) {
+    $build['#pre_render'][] = 'eeuem_menu_add_link';
     $menu_name = $block->getDerivativeId();
     $build['#cache']['contexts'][] = 'route.menu_active_trails:' . $menu_name;
   }
@@ -29,7 +61,7 @@ function eeuem_menu_block_title_block_view_alter(array &$build, BlockPluginInter
  * @return bool
  *   The boolean indicating whether this block needs modifying.
  */
-function _eeuem_menu_block_title_needs_modifying($build, BlockPluginInterface $block) {
+function _eeuem_menu_needs_modifying($build, BlockPluginInterface $block) {
   return $block->getBaseId() === 'system_menu_block';
 }
 
@@ -39,7 +71,7 @@ function _eeuem_menu_block_title_needs_modifying($build, BlockPluginInterface $b
  * This iterates over all the menu items looking for the active trail. When
  * found it will add the parent menu item as the block's label.
  */
-function eeuem_menu_block_title_add_link(array $build) {
+function eeuem_menu_add_link(array $build) {
   $items = [];
 
   if (!isset($build['#derivative_plugin_id'])) {

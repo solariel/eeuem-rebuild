@@ -1,44 +1,45 @@
-uuid: 9dea6619-345d-498e-b4af-3b2cc20e35c7
+uuid: fdac8b12-2d3a-4202-a341-641317815b28
 langcode: en
 status: true
 dependencies:
   config:
-    - page_manager.page.node_view
+    - page_manager.page.news
     - system.menu.navigation
+    - views.view.news
   module:
-    - ctools
     - panels
     - system
-id: node_view-panels_variant-0
-label: 'Node view'
+    - views
+id: news-panels_variant-0
+label: Panels
 variant: panels_variant
 variant_settings:
   blocks:
-    0f7c4195-5c08-4643-af8b-717531d6057f:
+    53ef3597-d7e0-4b88-848d-b658dff6af2d:
       id: 'system_menu_block:navigation'
-      label: 'Меню розділу'
+      label: Навігація
       provider: system
       label_display: visible
       level: 2
       depth: 1
       expand_all_items: false
       region: left
-      weight: 0
-      uuid: 0f7c4195-5c08-4643-af8b-717531d6057f
+      weight: -10
+      uuid: 53ef3597-d7e0-4b88-848d-b658dff6af2d
       context_mapping: {  }
-    3237cc5b-fd5b-4a81-80ce-f424e7db6fed:
-      id: 'entity_view:node'
-      label: 'Entity view (Content)'
-      provider: ctools
-      label_display: '0'
-      view_mode: default
+    1ca38f03-d37c-4b7e-9686-562874545152:
+      id: 'views_block:news-block_news'
+      label: News
+      provider: views
+      label_display: visible
+      views_label: News
+      items_per_page: none
       region: right
       weight: 0
-      uuid: 3237cc5b-fd5b-4a81-80ce-f424e7db6fed
-      context_mapping:
-        entity: node
+      uuid: 1ca38f03-d37c-4b7e-9686-562874545152
+      context_mapping: {  }
   id: panels_variant
-  uuid: 816ad2aa-8a08-4c3b-afb9-f7a9abbcd832
+  uuid: 27e4a9e9-5b78-4fa9-b56f-ed0c262c542d
   label: null
   weight: 0
   layout: bs_2col
@@ -65,11 +66,11 @@ variant_settings:
           col-lg-9: col-lg-9
         add_region_classes: 1
         attributes: ''
-  page_title: '[node:title]'
+  page_title: News
   storage_type: page_manager
-  storage_id: node_view-panels_variant-0
+  storage_id: news-panels_variant-0
   builder: standard
-page: node_view
+page: news
 weight: 0
 selection_criteria: {  }
 selection_logic: and

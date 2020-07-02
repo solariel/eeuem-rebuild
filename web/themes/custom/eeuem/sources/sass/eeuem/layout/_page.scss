@@ -2,7 +2,9 @@
   position: relative;
 }
 
-.page--pm-variant--node-view-panels-variant-0 {
+.page--pm-variant--node-view-panels-variant-0,
+.page--pm-variant--news-panels-variant-0,
+.page--pm-variant--albums-panels-variant-0 {
   .region--content--body {
     @include make-container();
     @include make-container-max-widths();

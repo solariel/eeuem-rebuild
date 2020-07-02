@@ -1,0 +1,19 @@
+.page--pm-variant--albums-panels-variant-0 {
+  .row {
+    padding-top: $spacer * 2;
+  }
+
+  .bs-region--left {
+    display: none;
+
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
+  }
+
+  .block-region-left {
+    .block {
+      margin-bottom: $spacer * 4;
+    }
+  }
+}

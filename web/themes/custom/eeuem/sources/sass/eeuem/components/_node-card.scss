@@ -1,0 +1,36 @@
+.node-card {
+  border-radius: $border-radius-lg;
+  box-shadow: $box-shadow;
+  margin-bottom: $spacer * 4;
+
+  .teaser-image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: $border-radius-lg $border-radius-lg 0 0;
+  }
+
+  .card-content {
+    padding: $spacer;
+    text-align: center;
+
+    * {
+      margin-bottom: $spacer;
+    }
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+    color: $secondary;
+    text-transform: uppercase;
+  }
+
+  .view-link a {
+    color: palette-color('text', 'alternative');
+
+    &:hover, &:active, &:hover:active, &:visited {
+      color: palette-color('text', 'alternative');
+      text-decoration: none;
+    }
+  }
+}

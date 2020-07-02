@@ -367,6 +367,13 @@ label.option {
 
 /* line 97, sources/sass/eeuem/components/_frontpage-slider.scss */
 .view-display-id-block_frontpage_slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
   position: absolute;
   bottom: 1rem;
   left: 50%;
@@ -375,14 +382,17 @@ label.option {
   list-style: none;
   padding: 0;
   margin: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-/* line 106, sources/sass/eeuem/components/_frontpage-slider.scss */
+/* line 109, sources/sass/eeuem/components/_frontpage-slider.scss */
 .view-display-id-block_frontpage_slider .slick-dots li {
   display: inline-block;
 }
 
-/* line 109, sources/sass/eeuem/components/_frontpage-slider.scss */
+/* line 112, sources/sass/eeuem/components/_frontpage-slider.scss */
 .view-display-id-block_frontpage_slider .slick-dots li button {
   font-size: 0;
   width: 1rem;
@@ -393,13 +403,13 @@ label.option {
   margin: 0 0.5rem;
 }
 
-/* line 118, sources/sass/eeuem/components/_frontpage-slider.scss */
+/* line 121, sources/sass/eeuem/components/_frontpage-slider.scss */
 .view-display-id-block_frontpage_slider .slick-dots li button:focus, .view-display-id-block_frontpage_slider .slick-dots li button:active, .view-display-id-block_frontpage_slider .slick-dots li button:focus:active {
   outline: none;
   border: none;
 }
 
-/* line 124, sources/sass/eeuem/components/_frontpage-slider.scss */
+/* line 127, sources/sass/eeuem/components/_frontpage-slider.scss */
 .view-display-id-block_frontpage_slider .slick-dots li.slick-active button {
   width: 1.2rem;
   height: 1.2rem;
@@ -431,6 +441,103 @@ label.option {
   color: #FFFFFF;
   font-weight: 1rem;
   text-indent: 0;
+}
+
+/* line 1, sources/sass/eeuem/components/_node-card.scss */
+.node-card {
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  margin-bottom: 4rem;
+}
+
+/* line 6, sources/sass/eeuem/components/_node-card.scss */
+.node-card .teaser-image img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+/* line 13, sources/sass/eeuem/components/_node-card.scss */
+.node-card .card-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+/* line 17, sources/sass/eeuem/components/_node-card.scss */
+.node-card .card-content * {
+  margin-bottom: 1rem;
+}
+
+/* line 22, sources/sass/eeuem/components/_node-card.scss */
+.node-card .card-title {
+  font-size: 1.2rem;
+  color: #2F4F89;
+  text-transform: uppercase;
+}
+
+/* line 28, sources/sass/eeuem/components/_node-card.scss */
+.node-card .view-link a {
+  color: #FFFFFF;
+}
+
+/* line 31, sources/sass/eeuem/components/_node-card.scss */
+.node-card .view-link a:hover, .node-card .view-link a:active, .node-card .view-link a:hover:active, .node-card .view-link a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* line 1, sources/sass/eeuem/components/_lightgallery.scss */
+ul.lightgallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -0.9375rem;
+  margin-left: -0.9375rem;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+  max-height: 40rem;
+  overflow: hidden;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+/* line 12, sources/sass/eeuem/components/_lightgallery.scss */
+ul.lightgallery:after {
+  content: ' ';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 0, 36, 0)), to(white));
+  background: -o-linear-gradient(top, rgba(2, 0, 36, 0) 0%, white 100%);
+  background: linear-gradient(180deg, rgba(2, 0, 36, 0) 0%, white 100%);
+}
+
+/* line 31, sources/sass/eeuem/components/_lightgallery.scss */
+ul.lightgallery li {
+  position: relative;
+  width: 100%;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* line 46, sources/sass/eeuem/components/_lightgallery.scss */
+ul.lightgallery li:last-child {
+  margin-bottom: 0;
 }
 
 @media (min-width: 36rem) {
@@ -511,6 +618,13 @@ label.option {
   .view-display-id-block_frontpage_slider .slick__slide .views-field-field-slide-description {
     display: block;
   }
+  /* line 31, sources/sass/eeuem/components/_lightgallery.scss */
+  ul.lightgallery li {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
 
 @media (min-width: 48rem) {
@@ -587,6 +701,22 @@ label.option {
   /* line 35, sources/sass/eeuem/components/_frontpage-slider.scss */
   .view-display-id-block_frontpage_slider .slick__slide .views-field-title .field-content {
     font-size: 1.5rem;
+  }
+  /* line 1, sources/sass/eeuem/components/_lightgallery.scss */
+  ul.lightgallery {
+    max-height: none;
+  }
+  /* line 25, sources/sass/eeuem/components/_lightgallery.scss */
+  ul.lightgallery:after {
+    content: '';
+    display: none;
+  }
+  /* line 31, sources/sass/eeuem/components/_lightgallery.scss */
+  ul.lightgallery li {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.33333333%;
+    flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
   }
 }
 

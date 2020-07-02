@@ -8,6 +8,6 @@ id: node
 label: Content
 tags:
   title: '[node:title] | [site:name]'
-  description: '[node:summary]'
+  description: '[node:field_excerpt]'
   canonical_url: '[node:url]'
   og_title: '[node:title]'

@@ -1,0 +1,46 @@
+.block--views-block-news-block-latest-news {
+  @include make-col-ready();
+  @include make-col(12);
+
+  .view-content {
+    @include make-row();
+    justify-content: center;
+  }
+
+  .views-row {
+    @include make-col-ready();
+    @include make-col(12);
+
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(4);
+    }
+  }
+
+  .views-row:last-child .node-card {
+    margin-bottom: 0;
+  }
+
+  .node-card {
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+    }
+  }
+
+  .card-title {
+    height: 3.25rem;
+    overflow: hidden;
+  }
+
+  .card-text {
+    height: 4.5rem;
+    overflow: hidden;
+  }
+
+  .view-header {
+    margin-bottom:  $spacer;
+  }
+}
