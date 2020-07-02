@@ -1,0 +1,8 @@
+uuid: b8fc8f83-e965-47f4-b5ca-e957c9aba71a
+langcode: en
+status: true
+dependencies: {  }
+id: page_variant__albums-panels_variant-0
+label: 'Page Variant: Albums: Panels'
+tags:
+  title: 'Фотоальбоми | [site:name]'

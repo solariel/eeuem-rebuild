@@ -4,3 +4,5 @@ variant_settings:
       label: Новини
       views_label: Новини
   page_title: Новини
+  label: ''
+label: Новини

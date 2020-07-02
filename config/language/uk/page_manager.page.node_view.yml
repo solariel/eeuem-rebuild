@@ -1,3 +1,4 @@
 parameters:
   node:
     label: Матеріал
+label: 'Перегляд матеріалів'

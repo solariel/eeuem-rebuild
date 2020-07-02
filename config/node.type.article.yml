@@ -9,10 +9,10 @@ third_party_settings:
   menu_ui:
     available_menus:
       - navigation
-    parent: 'navigation:menu_link_content:3499dc04-59f7-4966-a3d8-855d1c764259'
+    parent: 'navigation:menu_link_content:16d002f7-ed15-4c82-b95f-6453696b9c97'
   menu_force:
-    menu_force: 0
-    menu_force_parent: 0
+    menu_force: 1
+    menu_force_parent: 1
 name: Article
 type: article
 description: ''

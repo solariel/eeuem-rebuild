@@ -9,10 +9,10 @@ third_party_settings:
   menu_ui:
     available_menus:
       - navigation
-    parent: 'navigation:menu_link_content:2af43e3b-432c-4259-8468-baff9bd4f45e'
+    parent: 'navigation:menu_link_content:b155356c-7cda-4fd8-8d38-3f354edeedcc'
   menu_force:
-    menu_force: 0
-    menu_force_parent: 0
+    menu_force: 1
+    menu_force_parent: 1
 name: Album
 type: album
 description: ''

@@ -1,0 +1,8 @@
+uuid: 019e9111-5482-42c9-a9dc-3d690da5719f
+langcode: en
+status: true
+dependencies: {  }
+id: page_variant__news-panels_variant-0
+label: 'Page Variant: News: Panels'
+tags:
+  title: 'Новини | [site:name]'
