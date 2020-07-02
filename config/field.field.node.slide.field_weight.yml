@@ -1,0 +1,25 @@
+uuid: e8b28b12-f48a-438f-b9c9-46aa52602373
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weight
+    - node.type.slide
+id: node.slide.field_weight
+field_name: field_weight
+entity_type: node
+bundle: slide
+label: Вага
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: -100
+  max: 100
+  prefix: ''
+  suffix: ''
+field_type: integer

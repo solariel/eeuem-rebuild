@@ -328,20 +328,27 @@
 
 /* line 126, sources/sass/eeuem/theme/block/_responsive-menu.scss */
 .horizontal-menu .menu.sub-nav {
+  width: auto;
+  max-width: 25rem;
   margin: 0;
   padding: 1rem;
   background: #2F4F89;
   border-radius: 0 0.5rem 0 0;
 }
 
-/* line 132, sources/sass/eeuem/theme/block/_responsive-menu.scss */
+/* line 134, sources/sass/eeuem/theme/block/_responsive-menu.scss */
 .horizontal-menu .menu.sub-nav .menu-item a {
+  padding-left: 0;
+  border-bottom: 0.0625rem solid #F7F9FB;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
   color: #FFFFFF;
   text-transform: uppercase;
-  border-bottom: 0.0625rem solid #F7F9FB;
+  white-space: nowrap;
 }
 
-/* line 137, sources/sass/eeuem/theme/block/_responsive-menu.scss */
+/* line 143, sources/sass/eeuem/theme/block/_responsive-menu.scss */
 .horizontal-menu .menu.sub-nav .menu-item a:hover, .horizontal-menu .menu.sub-nav .menu-item a:active, .horizontal-menu .menu.sub-nav .menu-item a:hover:active, .horizontal-menu .menu.sub-nav .menu-item a:visited {
   color: #FFFFFF;
   text-decoration: none;

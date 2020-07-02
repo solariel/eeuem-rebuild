@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.slide.field_slide_description
     - field.field.node.slide.field_slide_image
+    - field.field.node.slide.field_weight
     - node.type.slide
   module:
     - user
@@ -22,4 +23,5 @@ content:
 hidden:
   field_slide_description: true
   field_slide_image: true
+  field_weight: true
   langcode: true

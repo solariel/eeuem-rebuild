@@ -124,15 +124,21 @@
   }
 
   .menu.sub-nav {
+    width: auto;
+    max-width: $spacer * 25;
     margin: 0;
     padding: $spacer;
     background: $secondary;
     border-radius: 0 $border-radius-lg 0 0;
 
     .menu-item a {
+      padding-left: 0;
+      border-bottom: 1px solid $light;
+      text-overflow: ellipsis;
+      overflow: hidden;
       color: palette-color('text', 'alternative');
       text-transform: uppercase;
-      border-bottom: 1px solid $light;
+      white-space: nowrap;
 
       &:hover, &:active, &:hover:active, &:visited {
         color: palette-color('text', 'alternative');

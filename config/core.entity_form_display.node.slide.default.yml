@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.slide.field_slide_description
     - field.field.node.slide.field_slide_image
+    - field.field.node.slide.field_weight
     - image.style.thumbnail
     - node.type.slide
   module:
@@ -37,6 +38,13 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_weight:
+    weight: 123
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
     region: content
   langcode:
     type: language_select
