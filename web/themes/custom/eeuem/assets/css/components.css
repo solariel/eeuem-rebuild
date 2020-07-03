@@ -168,30 +168,31 @@ label.option {
 /* line 28, sources/sass/eeuem/components/_tables.scss */
 .table thead th {
   vertical-align: bottom;
+  border-top: none;
   border-bottom: 0.125rem solid #ced4da;
   border-color: #fff;
   color: #fff;
   background-color: #5087E8;
 }
 
-/* line 35, sources/sass/eeuem/components/_tables.scss */
-.table thead th:first-child {
-  border-radius: 0.5rem 0 0 0;
-}
-
-/* line 39, sources/sass/eeuem/components/_tables.scss */
+/* line 36, sources/sass/eeuem/components/_tables.scss */
 .table thead th:last-child {
   border-radius: 0 0.5rem 0 0;
 }
 
-/* line 44, sources/sass/eeuem/components/_tables.scss */
+/* line 40, sources/sass/eeuem/components/_tables.scss */
+.table thead th:first-child {
+  border-radius: 0.5rem 0 0 0;
+}
+
+/* line 45, sources/sass/eeuem/components/_tables.scss */
 .table thead tr.control {
   visibility: hidden;
   border: none;
   padding: 0;
 }
 
-/* line 49, sources/sass/eeuem/components/_tables.scss */
+/* line 50, sources/sass/eeuem/components/_tables.scss */
 .table thead tr.control th {
   visibility: hidden;
   border: none;
@@ -199,7 +200,7 @@ label.option {
   font-size: 0;
 }
 
-/* line 58, sources/sass/eeuem/components/_tables.scss */
+/* line 59, sources/sass/eeuem/components/_tables.scss */
 .table tbody + tbody {
   border: none;
 }

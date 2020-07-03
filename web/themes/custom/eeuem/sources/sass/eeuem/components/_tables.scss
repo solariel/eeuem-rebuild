@@ -27,17 +27,18 @@
 
     th {
       vertical-align: bottom;
+      border-top: none;
       border-bottom: (2 * $table-border-width) solid $table-border-color;
       border-color: $white;
       color: $table-head-color;
       background-color: $table-head-bg;
 
-      &:first-child {
-        border-radius: $border-radius-lg 0 0 0;
-      }
-
       &:last-child {
         border-radius: 0 $border-radius-lg 0 0;
+      }
+
+      &:first-child {
+        border-radius: $border-radius-lg 0 0 0;
       }
     }
 
