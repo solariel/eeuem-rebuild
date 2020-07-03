@@ -199,7 +199,8 @@
                 "3028083": "https://www.drupal.org/files/issues/2019-01-24/3028083_6.patch"
             },
             "drupal/core": {
-                "2706241": "https://www.drupal.org/files/issues/2018-12-12/2706241-34.patch"
+                "2706241": "https://www.drupal.org/files/issues/2018-12-12/2706241-34.patch",
+                "2824086": "https://www.drupal.org/files/issues/2018-06-22/language-url-detection-2824086-9.patch"
             },
             "drupal/responsive_menu" : {
                 "3153145": "https://www.drupal.org/files/issues/2020-06-19/fix_chrome_bug-3153145-11.patch",

@@ -4,10 +4,11 @@ all:
   - language_url
 configurable:
   - language_interface
+  - language_url
 negotiation:
   language_content:
     enabled:
-      language-interface: 0
+      language-interface: 9
     method_weights:
       language-content-entity: -9
       language-url: -8
@@ -19,22 +20,30 @@ negotiation:
       language-selected: 12
   language_url:
     enabled:
-      language-url: 0
-      language-url-fallback: 1
+      language-user-anonymous: -20
+      language-user: -19
+      language-selected: -14
+    method_weights:
+      language-user-anonymous: -20
+      language-user: -19
+      language-url: -18
+      language-session: -17
+      language-browser: -16
+      language-url-fallback: -15
+      language-selected: -14
   language_interface:
     enabled:
       language-user-anonymous: -20
       language-user-admin: -19
       language-user: -18
-      language-url: -17
       language-selected: -14
     method_weights:
+      language-user-anonymous: -20
       language-user-admin: -19
       language-user: -18
       language-url: -17
       language-session: -16
       language-browser: -15
       language-selected: -14
-      language-user-anonymous: -20
 _core:
   default_config_hash: dqouFqVseNJNvEjsoYKxbinFOITuCxYhi4y2OTNQP_8

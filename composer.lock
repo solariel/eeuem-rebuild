@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc303e329325a79315a2d7d9574c8c23",
+    "content-hash": "ff6292254d1b3d4bab25207356c49bc3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2295,7 +2295,8 @@
                     }
                 },
                 "patches_applied": {
-                    "2706241": "https://www.drupal.org/files/issues/2018-12-12/2706241-34.patch"
+                    "2706241": "https://www.drupal.org/files/issues/2018-12-12/2706241-34.patch",
+                    "2824086": "https://www.drupal.org/files/issues/2018-06-22/language-url-detection-2824086-9.patch"
                 }
             },
             "autoload": {
