@@ -75,6 +75,10 @@
     }
   }
 
+  & > li ul ul {
+    left: $spacer * 24;
+  }
+
   & > li > a {
     color: palette-color('text', 'main');
     display: block;
