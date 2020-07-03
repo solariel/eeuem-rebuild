@@ -517,53 +517,9 @@ label.option {
 
 /* line 1, sources/sass/eeuem/components/_lightgallery.scss */
 ul.lightgallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -0.9375rem;
-  margin-left: -0.9375rem;
   position: relative;
   list-style: none;
   padding: 0;
-  margin-bottom: 0;
-  max-height: 40rem;
-  overflow: hidden;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-/* line 12, sources/sass/eeuem/components/_lightgallery.scss */
-ul.lightgallery:after {
-  content: ' ';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 4rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 0, 36, 0)), to(white));
-  background: -o-linear-gradient(top, rgba(2, 0, 36, 0) 0%, white 100%);
-  background: linear-gradient(180deg, rgba(2, 0, 36, 0) 0%, white 100%);
-}
-
-/* line 31, sources/sass/eeuem/components/_lightgallery.scss */
-ul.lightgallery li {
-  position: relative;
-  width: 100%;
-  padding-right: 0.9375rem;
-  padding-left: 0.9375rem;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-  max-width: 100%;
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-/* line 46, sources/sass/eeuem/components/_lightgallery.scss */
-ul.lightgallery li:last-child {
   margin-bottom: 0;
 }
 
@@ -645,13 +601,6 @@ ul.lightgallery li:last-child {
   .view-display-id-block_frontpage_slider .slick__slide .views-field-field-slide-description {
     display: block;
   }
-  /* line 31, sources/sass/eeuem/components/_lightgallery.scss */
-  ul.lightgallery li {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
 }
 
 @media (min-width: 48rem) {
@@ -728,22 +677,6 @@ ul.lightgallery li:last-child {
   /* line 35, sources/sass/eeuem/components/_frontpage-slider.scss */
   .view-display-id-block_frontpage_slider .slick__slide .views-field-title .field-content {
     font-size: 1.5rem;
-  }
-  /* line 1, sources/sass/eeuem/components/_lightgallery.scss */
-  ul.lightgallery {
-    max-height: none;
-  }
-  /* line 25, sources/sass/eeuem/components/_lightgallery.scss */
-  ul.lightgallery:after {
-    content: '';
-    display: none;
-  }
-  /* line 31, sources/sass/eeuem/components/_lightgallery.scss */
-  ul.lightgallery li {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 33.33333333%;
-    flex: 0 0 33.33333333%;
-    max-width: 33.33333333%;
   }
 }
 

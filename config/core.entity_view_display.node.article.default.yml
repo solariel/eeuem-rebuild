@@ -9,11 +9,10 @@ dependencies:
     - field.field.node.article.field_is_important
     - field.field.node.article.field_tags
     - field.field.node.article.field_teaser_image
-    - image.style.full_content_width_image
     - node.type.article
   module:
-    - colorbox
     - entity_reference_revisions
+    - lightgallery
     - user
 id: node.article.default
 targetEntityType: node
@@ -30,18 +29,48 @@ content:
     third_party_settings: {  }
     region: content
   field_teaser_image:
-    type: colorbox
+    type: lightgallery
     weight: 1
     region: content
     label: hidden
     settings:
-      colorbox_node_style: full_content_width_image
-      colorbox_node_style_first: ''
-      colorbox_image_style: ''
-      colorbox_gallery: none
-      colorbox_gallery_custom: ''
-      colorbox_caption: alt
-      colorbox_caption_custom: ''
+      lightgallery_core:
+        thumb_image_style: full_content_width_image
+        lightgallery_image_style: ''
+        title_source: alt
+        mode: lg-slide
+        preload: '1'
+        closable: '1'
+        loop: '1'
+        esc_key: '1'
+        key_press: '1'
+        controls: '1'
+        mouse_wheel: '1'
+        download: '1'
+        counter: '1'
+        drag: '1'
+        touch: '1'
+      lightgallery_thumbs:
+        thumbnails: '1'
+        animate_thumb: '1'
+        current_pager_position: middle
+        thumb_width: '100'
+        thumb_cont_height: '100'
+      lightgallery_autoplay:
+        autoplay: '1'
+        pause: '5000'
+        progress_bar: '1'
+        autoplay_controls: '1'
+      lightgallery_full_screen:
+        full_screen: '1'
+      lightgallery_pager:
+        pager: '1'
+      lightgallery_zoom:
+        zoom: '1'
+        scale: '1'
+      lightgallery_hash:
+        gallery_id: '1'
+        hash: 0
     third_party_settings: {  }
   links:
     weight: 0

@@ -604,15 +604,68 @@
 }
 
 /* line 22, sources/sass/eeuem/theme/node/_view-mode-default.scss */
-.node--view-mode-default .field--name-field-teaser-image {
+.node--view-mode-default .node--content > .lightgallery-wrapper {
   margin-bottom: 2rem;
 }
 
 /* line 25, sources/sass/eeuem/theme/node/_view-mode-default.scss */
-.node--view-mode-default .field--name-field-teaser-image img {
+.node--view-mode-default .node--content > .lightgallery-wrapper img {
   display: block;
   margin: auto;
   border-radius: 0.5rem;
+}
+
+/* line 2, sources/sass/eeuem/theme/node/_album.scss */
+.node--type-album.node--view-mode-default ul.lightgallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -0.9375rem;
+  margin-left: -0.9375rem;
+  max-height: 40rem;
+  overflow: hidden;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+/* line 9, sources/sass/eeuem/theme/node/_album.scss */
+.node--type-album.node--view-mode-default ul.lightgallery:after {
+  content: ' ';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 0, 36, 0)), to(white));
+  background: -o-linear-gradient(top, rgba(2, 0, 36, 0) 0%, white 100%);
+  background: linear-gradient(180deg, rgba(2, 0, 36, 0) 0%, white 100%);
+}
+
+/* line 28, sources/sass/eeuem/theme/node/_album.scss */
+.node--type-album.node--view-mode-default ul.lightgallery li {
+  position: relative;
+  width: 100%;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* line 43, sources/sass/eeuem/theme/node/_album.scss */
+.node--type-album.node--view-mode-default ul.lightgallery li:last-child {
+  margin-bottom: 0;
+}
+
+/* line 48, sources/sass/eeuem/theme/node/_album.scss */
+.node--type-album.node--view-mode-default ul.lightgallery img {
+  border-radius: 0 !important;
 }
 
 /* line 1, sources/sass/eeuem/theme/paragraph/_default.scss */
@@ -661,7 +714,7 @@
 }
 
 /* line 5, sources/sass/eeuem/theme/paragraph/_image-left-text-right.scss */
-.paragraph--type--image-left-text-right.paragraph--view-mode--default .field--name-field-left-image {
+.paragraph--type--image-left-text-right.paragraph--view-mode--default .lightgallery-wrapper {
   position: relative;
   width: 100%;
   padding-right: 0.9375rem;
@@ -708,7 +761,7 @@
 }
 
 /* line 10, sources/sass/eeuem/theme/paragraph/_image-right-text-left.scss */
-.paragraph--type--image-right-text-left.paragraph--view-mode--default .field--name-field-right-image {
+.paragraph--type--image-right-text-left.paragraph--view-mode--default .lightgallery-wrapper {
   position: relative;
   width: 100%;
   padding-right: 0.9375rem;
@@ -776,6 +829,54 @@
   text-align: center;
 }
 
+/* line 2, sources/sass/eeuem/theme/paragraph/_gallery.scss */
+.paragraph.paragraph--type--gallery ul.lightgallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -0.9375rem;
+  margin-left: -0.9375rem;
+  max-height: 40rem;
+  overflow: hidden;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+/* line 9, sources/sass/eeuem/theme/paragraph/_gallery.scss */
+.paragraph.paragraph--type--gallery ul.lightgallery:after {
+  content: ' ';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 0, 36, 0)), to(white));
+  background: -o-linear-gradient(top, rgba(2, 0, 36, 0) 0%, white 100%);
+  background: linear-gradient(180deg, rgba(2, 0, 36, 0) 0%, white 100%);
+}
+
+/* line 28, sources/sass/eeuem/theme/paragraph/_gallery.scss */
+.paragraph.paragraph--type--gallery ul.lightgallery li {
+  position: relative;
+  width: 100%;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* line 43, sources/sass/eeuem/theme/paragraph/_gallery.scss */
+.paragraph.paragraph--type--gallery ul.lightgallery li:last-child {
+  margin-bottom: 0;
+}
+
 @media (min-width: 36rem) {
   /* line 2, sources/sass/eeuem/theme/page/_frontpage.scss */
   .page--pm-variant--frontpage-panels-variant-0 .layout--onecol {
@@ -792,6 +893,20 @@
   /* line 9, sources/sass/eeuem/theme/region/_footer.scss */
   .section--footer .region--footer-bottom {
     max-width: 100%;
+  }
+  /* line 28, sources/sass/eeuem/theme/node/_album.scss */
+  .node--type-album.node--view-mode-default ul.lightgallery li {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  /* line 28, sources/sass/eeuem/theme/paragraph/_gallery.scss */
+  .paragraph.paragraph--type--gallery ul.lightgallery li {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 
@@ -846,8 +961,24 @@
     flex: 0 0 50%;
     max-width: 50%;
   }
+  /* line 2, sources/sass/eeuem/theme/node/_album.scss */
+  .node--type-album.node--view-mode-default ul.lightgallery {
+    max-height: none;
+  }
+  /* line 22, sources/sass/eeuem/theme/node/_album.scss */
+  .node--type-album.node--view-mode-default ul.lightgallery:after {
+    content: '';
+    display: none;
+  }
+  /* line 28, sources/sass/eeuem/theme/node/_album.scss */
+  .node--type-album.node--view-mode-default ul.lightgallery li {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.33333333%;
+    flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
+  }
   /* line 5, sources/sass/eeuem/theme/paragraph/_image-left-text-right.scss */
-  .paragraph--type--image-left-text-right.paragraph--view-mode--default .field--name-field-left-image {
+  .paragraph--type--image-left-text-right.paragraph--view-mode--default .lightgallery-wrapper {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -869,7 +1000,7 @@
     flex-direction: row;
   }
   /* line 10, sources/sass/eeuem/theme/paragraph/_image-right-text-left.scss */
-  .paragraph--type--image-right-text-left.paragraph--view-mode--default .field--name-field-right-image {
+  .paragraph--type--image-right-text-left.paragraph--view-mode--default .lightgallery-wrapper {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -893,6 +1024,22 @@
   /* line 13, sources/sass/eeuem/theme/paragraph/_two-images.scss */
   .paragraph--type--two-images.paragraph--view-mode--default .group-left {
     margin-bottom: 0;
+  }
+  /* line 2, sources/sass/eeuem/theme/paragraph/_gallery.scss */
+  .paragraph.paragraph--type--gallery ul.lightgallery {
+    max-height: none;
+  }
+  /* line 22, sources/sass/eeuem/theme/paragraph/_gallery.scss */
+  .paragraph.paragraph--type--gallery ul.lightgallery:after {
+    content: '';
+    display: none;
+  }
+  /* line 28, sources/sass/eeuem/theme/paragraph/_gallery.scss */
+  .paragraph.paragraph--type--gallery ul.lightgallery li {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.33333333%;
+    flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
   }
 }
 

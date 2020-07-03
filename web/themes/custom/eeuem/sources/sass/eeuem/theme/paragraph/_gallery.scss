@@ -1,0 +1,48 @@
+.paragraph.paragraph--type--gallery {
+  ul.lightgallery {
+    @include make-row();
+
+    max-height: $spacer * 40;
+    overflow: hidden;
+    justify-content: center;
+
+    &:after {
+      content: ' ';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: $spacer * 4;
+      background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(255,255,255,1) 100%);
+    }
+
+    @include media-breakpoint-up(md) {
+      max-height: none;
+
+      &:after {
+        content: '';
+        display: none;
+      }
+    }
+
+    li {
+      @include make-col-ready();
+      @include make-col(12);
+
+      display: block;
+      margin-bottom: $spacer * 0.5;
+
+      @include media-breakpoint-up(sm) {
+        @include make-col(6);
+      }
+
+      @include media-breakpoint-up(md) {
+        @include make-col(4);
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

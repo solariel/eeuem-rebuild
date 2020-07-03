@@ -49,8 +49,8 @@ content:
         zoom: '1'
         scale: '1'
       lightgallery_hash:
-        hash: '1'
         gallery_id: '1'
+        hash: 0
       lightgallery_pager:
         pager: 0
     third_party_settings: {  }
