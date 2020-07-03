@@ -13,7 +13,12 @@
   td {
     padding: $table-cell-padding;
     vertical-align: top;
-    border: none;
+    border-top: $table-border-width solid $table-border-color;
+    border-left: $table-border-width solid $table-border-color;
+
+    &:first-child {
+      border-left: none;
+    }
   }
 
   thead {
@@ -23,6 +28,7 @@
     th {
       vertical-align: bottom;
       border-bottom: (2 * $table-border-width) solid $table-border-color;
+      border-color: $white;
       color: $table-head-color;
       background-color: $table-head-bg;
 
@@ -34,13 +40,26 @@
         border-radius: 0 $border-radius-lg 0 0;
       }
     }
+
+    tr.control {
+      visibility: hidden;
+      border: none;
+      padding: 0;
+
+      th {
+        visibility: hidden;
+        border: none;
+        padding: 0;
+        font-size: 0;
+      }
+    }
   }
 
   tbody + tbody {
     border: none;
   }
 
-  tbody tr:nth-of-type(#{$table-striped-order}) {
+  /*tbody tr:nth-of-type(#{$table-striped-order}) {
     background-color: $table-accent-bg;
-  }
+  }*/
 }

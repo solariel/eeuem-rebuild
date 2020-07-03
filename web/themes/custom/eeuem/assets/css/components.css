@@ -139,6 +139,9 @@ label.option {
   color: #434d53;
   -webkit-box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.075);
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.075);
+  /*tbody tr:nth-of-type(even) {
+    background-color: $table-accent-bg;
+  }*/
 }
 
 /* line 12, sources/sass/eeuem/components/_tables.scss */
@@ -146,41 +149,59 @@ label.option {
 .table td {
   padding: 0.75rem;
   vertical-align: top;
-  border: none;
+  border-top: 0.0625rem solid #ced4da;
+  border-left: 0.0625rem solid #ced4da;
 }
 
 /* line 19, sources/sass/eeuem/components/_tables.scss */
+.table th:first-child,
+.table td:first-child {
+  border-left: none;
+}
+
+/* line 24, sources/sass/eeuem/components/_tables.scss */
 .table thead {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
 
-/* line 23, sources/sass/eeuem/components/_tables.scss */
+/* line 28, sources/sass/eeuem/components/_tables.scss */
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 0.125rem solid #F7F9FB;
+  border-bottom: 0.125rem solid #ced4da;
+  border-color: #fff;
   color: #fff;
   background-color: #5087E8;
 }
 
-/* line 29, sources/sass/eeuem/components/_tables.scss */
+/* line 35, sources/sass/eeuem/components/_tables.scss */
 .table thead th:first-child {
   border-radius: 0.5rem 0 0 0;
 }
 
-/* line 33, sources/sass/eeuem/components/_tables.scss */
+/* line 39, sources/sass/eeuem/components/_tables.scss */
 .table thead th:last-child {
   border-radius: 0 0.5rem 0 0;
 }
 
-/* line 39, sources/sass/eeuem/components/_tables.scss */
-.table tbody + tbody {
+/* line 44, sources/sass/eeuem/components/_tables.scss */
+.table thead tr.control {
+  visibility: hidden;
   border: none;
+  padding: 0;
 }
 
-/* line 43, sources/sass/eeuem/components/_tables.scss */
-.table tbody tr:nth-of-type(even) {
-  background-color: #F7F9FB;
+/* line 49, sources/sass/eeuem/components/_tables.scss */
+.table thead tr.control th {
+  visibility: hidden;
+  border: none;
+  padding: 0;
+  font-size: 0;
+}
+
+/* line 58, sources/sass/eeuem/components/_tables.scss */
+.table tbody + tbody {
+  border: none;
 }
 
 /* line 2, sources/sass/eeuem/components/_item-list.scss */

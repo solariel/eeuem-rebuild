@@ -1026,18 +1026,18 @@ pre code {
 .table td {
   padding: 0.75rem;
   vertical-align: top;
-  border-top: 0.0625rem solid #F7F9FB;
+  border-top: 0.0625rem solid #ced4da;
 }
 
 /* line 18, ../../contrib/bootstrapper/sources/vendor/bootstrap/scss/_tables.scss */
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 0.125rem solid #F7F9FB;
+  border-bottom: 0.125rem solid #ced4da;
 }
 
 /* line 23, ../../contrib/bootstrapper/sources/vendor/bootstrap/scss/_tables.scss */
 .table tbody + tbody {
-  border-top: 0.125rem solid #F7F9FB;
+  border-top: 0.125rem solid #ced4da;
 }
 
 /* line 34, ../../contrib/bootstrapper/sources/vendor/bootstrap/scss/_tables.scss */
@@ -1048,13 +1048,13 @@ pre code {
 
 /* line 45, ../../contrib/bootstrapper/sources/vendor/bootstrap/scss/_tables.scss */
 .table-bordered {
-  border: 0.0625rem solid #F7F9FB;
+  border: 0.0625rem solid #ced4da;
 }
 
 /* line 48, ../../contrib/bootstrapper/sources/vendor/bootstrap/scss/_tables.scss */
 .table-bordered th,
 .table-bordered td {
-  border: 0.0625rem solid #F7F9FB;
+  border: 0.0625rem solid #ced4da;
 }
 
 /* line 54, ../../contrib/bootstrapper/sources/vendor/bootstrap/scss/_tables.scss */
@@ -1319,7 +1319,7 @@ pre code {
 .table .thead-light th {
   color: #fff;
   background-color: #5087E8;
-  border-color: #F7F9FB;
+  border-color: #ced4da;
 }
 
 /* line 130, ../../contrib/bootstrapper/sources/vendor/bootstrap/scss/_tables.scss */
@@ -12483,12 +12483,12 @@ a.text-dark:hover, a.text-dark:focus {
   .table-dark td,
   .table-dark thead th,
   .table-dark tbody + tbody {
-    border-color: #F7F9FB;
+    border-color: #ced4da;
   }
   /* line 134, ../../contrib/bootstrapper/sources/vendor/bootstrap/scss/_print.scss */
   .table .thead-dark th {
     color: inherit;
-    border-color: #F7F9FB;
+    border-color: #ced4da;
   }
   /* line 24, ../../contrib/bootstrapper/sources/vendor/bootstrap/scss/utilities/_display.scss */
   .d-print-none {
