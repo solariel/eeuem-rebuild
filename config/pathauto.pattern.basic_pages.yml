@@ -8,17 +8,17 @@ dependencies:
 id: basic_pages
 label: 'Basic pages'
 type: 'canonical_entities:node'
-pattern: '/[node:menu-link:parents]/[node:title]'
+pattern: '/[node:menu-link:parents:join-path]/[node:title]'
 selection_criteria:
-  7d3e5ee6-7ef2-45de-ac17-9be5be3f5f41:
+  586de3e1-943c-4c4f-9092-9f5c257d058f:
     id: node_type
     bundles:
       basic_page: basic_page
     negate: false
     context_mapping:
       node: node
-    uuid: 7d3e5ee6-7ef2-45de-ac17-9be5be3f5f41
-  687dd334-9b82-42d5-8eb7-79320fc57dff:
+    uuid: 586de3e1-943c-4c4f-9092-9f5c257d058f
+  aed4e065-e8b4-4b29-8832-74b32a1472fb:
     id: language
     langcodes:
       en: en
@@ -26,7 +26,7 @@ selection_criteria:
     negate: false
     context_mapping:
       language: 'node:langcode:language'
-    uuid: 687dd334-9b82-42d5-8eb7-79320fc57dff
+    uuid: aed4e065-e8b4-4b29-8832-74b32a1472fb
 selection_logic: and
 weight: -10
 relationships:

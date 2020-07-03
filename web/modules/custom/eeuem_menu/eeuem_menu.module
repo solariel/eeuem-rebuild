@@ -28,7 +28,7 @@ function eeuem_menu_node_update(NodeInterface $entity) {
  * @throws \Drupal\Core\TypedData\Exception\MissingDataException
  */
 function _eeuem_menu_disable_menu_link(NodeInterface $node) {
-  if (in_array($node->bundle(), ['article', 'album'])) {
+  if (in_array($node->bundle(), ['article', 'album', 'event', 'publication'])) {
     if ($node->hasField('menu_link') && $link = $node->get('menu_link')->first()) {
       /** @var Drupal\menu_link_content\Entity\MenuLinkContent $link */
       $link = $link->entity;

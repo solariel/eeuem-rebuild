@@ -3,11 +3,16 @@ langcode: en
 status: true
 dependencies:
   module:
+    - menu_force
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus: {  }
-    parent: ''
+    available_menus:
+      - navigation
+    parent: 'navigation:menu_link_content:55447636-d474-4634-a507-13eb4ea7340b'
+  menu_force:
+    menu_force: 1
+    menu_force_parent: 1
 name: Publication
 type: publication
 description: ''
