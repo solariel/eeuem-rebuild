@@ -40,6 +40,10 @@
       &:first-child {
         border-radius: $border-radius-lg 0 0 0;
       }
+
+      &:first-child:last-child {
+        border-radius: $border-radius-lg $border-radius-lg 0 0;
+      }
     }
 
     tr.control {
