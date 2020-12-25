@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.person.field_bio
     - field.field.node.person.field_person_image
     - field.field.node.person.field_position_and_degree
+    - image.style.person_teaser
     - node.type.person
   module:
     - image
@@ -18,25 +19,21 @@ mode: teaser
 content:
   field_person_image:
     type: image
-    weight: 1
+    weight: 0
     region: content
     label: hidden
     settings:
-      image_style: ''
-      image_link: content
+      image_style: person_teaser
+      image_link: ''
     third_party_settings: {  }
   field_position_and_degree:
     type: basic_string
-    weight: 2
+    weight: 1
     region: content
     label: hidden
-    settings: {  }
-    third_party_settings: {  }
-  links:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   field_bio: true
   langcode: true
+  links: true

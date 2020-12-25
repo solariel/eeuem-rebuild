@@ -1,0 +1,23 @@
+uuid: cb216148-4c70-489f-bbca-6aa4bfa7bc16
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_relevant_link
+    - node.type.relevant
+  module:
+    - link
+id: node.relevant.field_relevant_link
+field_name: field_relevant_link
+entity_type: node
+bundle: relevant
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

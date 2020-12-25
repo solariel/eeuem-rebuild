@@ -1,0 +1,6 @@
+label: Актуальне
+description: 'Актуальне, контент'
+display:
+  default:
+    display_options:
+      title: Актуальне

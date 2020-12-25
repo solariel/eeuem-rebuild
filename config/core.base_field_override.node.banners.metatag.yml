@@ -1,0 +1,18 @@
+uuid: 55602885-a21c-4591-b9db-2e9975208c0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.banners
+id: node.banners.metatag
+field_name: metatag
+entity_type: node
+bundle: banners
+label: Metatags
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

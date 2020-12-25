@@ -1,0 +1,8 @@
+uuid: cbd25f60-aad0-4d2a-9179-340045f1f4ad
+langcode: und
+status: true
+dependencies: {  }
+name: 'Conference type'
+vid: conference_type
+description: ''
+weight: 0

@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_conference_type
     - node.type.conference
-    - taxonomy.vocabulary.conference_types
+    - taxonomy.vocabulary.conference_type
 id: node.conference.field_conference_type
 field_name: field_conference_type
 entity_type: node
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      conference_types: conference_types
+      conference_type: conference_type
     sort:
       field: name
       direction: asc

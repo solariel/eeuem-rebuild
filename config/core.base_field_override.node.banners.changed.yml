@@ -1,0 +1,18 @@
+uuid: 26c60034-e3b8-4bd4-a94d-d3a168f8f4a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.banners
+id: node.banners.changed
+field_name: changed
+entity_type: node
+bundle: banners
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

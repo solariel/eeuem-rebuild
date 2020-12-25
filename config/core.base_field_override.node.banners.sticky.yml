@@ -1,0 +1,22 @@
+uuid: 9e3103c3-6986-4c1e-b000-94709d45e495
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.banners
+id: node.banners.sticky
+field_name: sticky
+entity_type: node
+bundle: banners
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

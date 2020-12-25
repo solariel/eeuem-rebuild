@@ -1,0 +1,18 @@
+uuid: fd65f7cf-ca12-4037-9c70-60e52bd954f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.slide
+id: node.slide.metatag
+field_name: metatag
+entity_type: node
+bundle: slide
+label: Metatags
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,18 @@
+uuid: 00a4bfcb-3d3b-4bfc-b793-04e5727dfc0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.publication
+id: node.publication.changed
+field_name: changed
+entity_type: node
+bundle: publication
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

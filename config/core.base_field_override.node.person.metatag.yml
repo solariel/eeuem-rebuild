@@ -1,0 +1,18 @@
+uuid: 0096e786-a3fd-4089-8b38-4bdcf273fa32
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.person
+id: node.person.metatag
+field_name: metatag
+entity_type: node
+bundle: person
+label: Metatags
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

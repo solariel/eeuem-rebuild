@@ -1,0 +1,25 @@
+uuid: a2a5e4c7-f50b-462d-9e81-5c41ad78f233
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:custom_html:a0a6c273-4092-4baf-8609-93eb0741a231'
+  module:
+    - block_content
+  theme:
+    - eeuem
+id: socialnimerezhi
+theme: eeuem
+region: header_top
+weight: 0
+provider: null
+plugin: 'block_content:a0a6c273-4092-4baf-8609-93eb0741a231'
+settings:
+  id: 'block_content:a0a6c273-4092-4baf-8609-93eb0741a231'
+  label: 'Соціальні мережі'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -479,7 +479,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: News
+      title: Relevant
       header: {  }
       footer: {  }
       empty: {  }

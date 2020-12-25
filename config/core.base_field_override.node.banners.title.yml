@@ -1,0 +1,18 @@
+uuid: 3a3fbaee-9913-4a43-a926-ad727be3c9ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.banners
+id: node.banners.title
+field_name: title
+entity_type: node
+bundle: banners
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -7,6 +7,7 @@ dependencies:
     - views.view.albums
     - views.view.frontpage_slider
     - views.view.news
+    - views.view.relevant
   module:
     - panels
     - views
@@ -34,7 +35,7 @@ variant_settings:
       views_label: News
       items_per_page: none
       region: content
-      weight: 0
+      weight: 1
       uuid: 4a2487ff-f59e-45e6-9a2c-8486fc010585
       context_mapping: {  }
     2864be06-bc3a-4719-842e-360256563526:
@@ -45,8 +46,19 @@ variant_settings:
       views_label: Albums
       items_per_page: none
       region: content
-      weight: 1
+      weight: 2
       uuid: 2864be06-bc3a-4719-842e-360256563526
+      context_mapping: {  }
+    73d0acd2-da42-412b-ab84-e2e6e53b4fab:
+      id: 'views_block:relevant-relevant_content_block'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 0
+      uuid: 73d0acd2-da42-412b-ab84-e2e6e53b4fab
       context_mapping: {  }
   id: panels_variant
   uuid: 222e91cb-a16b-4d75-9dfe-83d1a1b5e44a

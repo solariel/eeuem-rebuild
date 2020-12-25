@@ -1,0 +1,15 @@
+uuid: 0aefddf6-dd20-4d91-ab7f-787fa076cebe
+langcode: en
+status: true
+dependencies: {  }
+name: person_teaser
+label: 'Person teaser'
+effects:
+  c7d7d74f-cab3-4fbd-a3a3-288a9675e2cc:
+    uuid: c7d7d74f-cab3-4fbd-a3a3-288a9675e2cc
+    id: image_scale
+    weight: 1
+    data:
+      width: 200
+      height: null
+      upscale: false

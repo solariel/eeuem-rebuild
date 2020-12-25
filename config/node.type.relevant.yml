@@ -1,0 +1,21 @@
+uuid: 5a8b1c20-ab32-4a6d-a450-bcd26018e6c6
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_force
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  menu_force:
+    menu_force: 0
+    menu_force_parent: 0
+name: Relevant
+type: relevant
+description: 'Relevant on front page'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: true

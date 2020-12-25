@@ -20,8 +20,6 @@ negotiation:
       language-selected: 12
   language_url:
     enabled:
-      language-user-anonymous: -20
-      language-user: -19
       language-selected: -14
     method_weights:
       language-user-anonymous: -20

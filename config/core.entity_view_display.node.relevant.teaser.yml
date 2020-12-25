@@ -1,0 +1,25 @@
+uuid: e0eb0681-9946-4948-a2fd-e0746c0a26ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.relevant.field_image
+    - field.field.node.relevant.field_relevant_link
+    - node.type.relevant
+  module:
+    - user
+id: node.relevant.teaser
+targetEntityType: node
+bundle: relevant
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_image: true
+  field_relevant_link: true
+  langcode: true

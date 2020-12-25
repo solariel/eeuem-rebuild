@@ -1,0 +1,18 @@
+uuid: 183c7090-f919-4ee9-ba9c-e75bf680aa95
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.participation_type
+id: taxonomy_term.participation_type.name
+field_name: name
+entity_type: taxonomy_term
+bundle: participation_type
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

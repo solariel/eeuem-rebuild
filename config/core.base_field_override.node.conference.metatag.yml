@@ -1,0 +1,18 @@
+uuid: 8b3f57d9-c90f-4808-b42c-4300acfc6552
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.conference
+id: node.conference.metatag
+field_name: metatag
+entity_type: node
+bundle: conference
+label: Metatags
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map
