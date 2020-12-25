@@ -14,11 +14,6 @@
   margin-left: auto;
 }
 
-/* line 1, sources/sass/eeuem/layout/_layout_one_col.scss */
-.layout--onecol .layout__region {
-  width: auto;
-}
-
 @media (min-width: 36rem) {
   /* line 8, sources/sass/eeuem/layout/_page.scss */
   .page--pm-variant--node-view-panels-variant-0 .region--content--body,
@@ -53,5 +48,10 @@
   .page--pm-variant--albums-panels-variant-0 .region--content--body {
     max-width: 73.125rem;
   }
+}
+
+/* line 1, sources/sass/eeuem/layout/_layout_one_col.scss */
+.layout--onecol .layout__region {
+  width: auto;
 }
 /*# sourceMappingURL=layout.css.map */

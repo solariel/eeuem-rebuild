@@ -85,13 +85,8 @@ module.exports = function () {
     map: maps,
     parser: safeParser,
     processors: [
-      doiuse,
-      willchange,
-      sorting,
-      sorting_mq,
       autoprefixer,
-      pxtorem,
-      reporter
+      pxtorem
     ]
   };
 

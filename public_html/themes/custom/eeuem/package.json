@@ -3,9 +3,11 @@
   "description": "Drupal 8 theme based on Bootstrap 4 framework.",
   "private": true,
   "version": "0.0.1",
-  "dependencies": {},
+  "dependencies": {
+    "postcss": "^8.2.1"
+  },
   "devDependencies": {
-    "autoprefixer": "latest",
+    "autoprefixer": "9.8.6",
     "breakpoint-sass": "latest",
     "caniuse-db": "latest",
     "cssnano": "latest",
