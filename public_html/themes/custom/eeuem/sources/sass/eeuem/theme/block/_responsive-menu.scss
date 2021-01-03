@@ -75,8 +75,14 @@
     }
   }
 
+  & li li {
+    float: unset;
+    list-style: none;
+  }
+
   & > li ul ul {
-    left: $spacer * 24;
+    min-width: max-content !important;
+    left: calc(100% + 1rem);
   }
 
   & > li > a {
