@@ -3,8 +3,9 @@
 // ====================
 .section--header {
   .region--header-top--wrapper {
-    background: url('../images/header-bg.png');
-    background-size: contain;
+    //background: url('../images/header-bg.png');
+    //background-size: contain;
+    background-color: $primary;
     box-shadow: $box-shadow;
 
     @include media-breakpoint-up(lg) {
