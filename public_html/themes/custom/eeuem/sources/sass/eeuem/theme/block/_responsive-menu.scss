@@ -142,7 +142,9 @@
     background: $secondary;
     border-radius: 0 $border-radius-lg 0 0;
 
-    .menu-item a {
+    .menu-item a,
+    .menu-item span {
+      display: block;
       padding-left: 0;
       border-bottom: 1px solid $light;
       text-overflow: ellipsis;
@@ -155,6 +157,13 @@
         color: palette-color('text', 'alternative');
         text-decoration: none;
       }
+    }
+
+    .menu-item span {
+      padding-top: 0.25em;
+      padding-right: 1em;
+      padding-bottom: 0.25em;
+      cursor: pointer;
     }
   }
 }
