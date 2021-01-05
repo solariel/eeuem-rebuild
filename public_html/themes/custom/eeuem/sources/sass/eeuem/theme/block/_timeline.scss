@@ -49,6 +49,7 @@
 
         @include media-breakpoint-up(lg) {
           height: $spacer * 4;
+          font-size: $font-size-base;
         }
       }
 

@@ -1010,6 +1010,7 @@
   /* line 44, sources/sass/eeuem/theme/block/_timeline.scss */
   .block--views-block-timeline-block-timeline .timeline-item .views-field-nothing .timeline-item-desctiption {
     height: 4rem;
+    font-size: 1rem;
   }
 }
 
@@ -1022,7 +1023,7 @@
     transform: rotate(90deg);
     text-align: left;
   }
-  /* line 61, sources/sass/eeuem/theme/block/_timeline.scss */
+  /* line 62, sources/sass/eeuem/theme/block/_timeline.scss */
   .block--views-block-timeline-block-timeline .timeline-item .views-field-nothing .field-content {
     display: block;
     -webkit-transform: scaleY(-1);
@@ -1037,7 +1038,7 @@
   }
 }
 
-/* line 72, sources/sass/eeuem/theme/block/_timeline.scss */
+/* line 73, sources/sass/eeuem/theme/block/_timeline.scss */
 .block--views-block-timeline-block-timeline .timeline-item .timeline-marker {
   width: 1rem !important;
   height: 1rem !important;
