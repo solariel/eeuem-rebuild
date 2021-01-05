@@ -3,33 +3,25 @@
   @include make-col(12);
 
   @include media-breakpoint-up(lg) {
-    max-height: $spacer * 30;
+    max-height: $spacer * 28;
     overflow: hidden;
   }
 
   @include media-breakpoint-up(xl) {
-    max-height: $spacer * 36;
-  }
-
-  .block__heading {
-    @include media-breakpoint-up(lg) {
-      margin-bottom: $spacer * -14;
-    }
-
-    @include media-breakpoint-up(xl) {
-      margin-bottom: $spacer * -17;
-    }
+    max-height: $spacer * 34;
   }
 
   .timeline-list {
     @include media-breakpoint-up(lg) {
       width: 48%;
       margin: auto;
+      margin-top: $spacer * -14;
       transform: rotate(-90deg);
     }
 
     @include media-breakpoint-up(xl) {
       width: 49%;
+      margin-top: $spacer * -17;
     }
   }
 
