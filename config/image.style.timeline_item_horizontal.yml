@@ -1,0 +1,15 @@
+uuid: 56168c75-1c17-43d7-a7ac-b313d49a5f90
+langcode: en
+status: true
+dependencies: {  }
+name: timeline_item_horizontal
+label: 'Timeline item horizontal'
+effects:
+  35754cc2-6a39-4919-8772-ad931390c34a:
+    uuid: 35754cc2-6a39-4919-8772-ad931390c34a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 166
+      height: 113
+      anchor: center-center

@@ -1,0 +1,15 @@
+uuid: 90dec54f-28e6-49fb-bf97-e392030456c5
+langcode: en
+status: true
+dependencies: {  }
+name: timeline_item_vertical
+label: 'Timeline item vertical'
+effects:
+  a68fdcbd-1739-46cf-b09c-7fd44b936bcb:
+    uuid: a68fdcbd-1739-46cf-b09c-7fd44b936bcb
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 350
+      height: 230
+      anchor: center-center

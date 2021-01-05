@@ -2,22 +2,70 @@
   @include make-col-ready();
   @include make-col(12);
 
+  @include media-breakpoint-up(lg) {
+    max-height: $spacer * 30;
+    overflow: hidden;
+  }
+
+  @include media-breakpoint-up(xl) {
+    max-height: $spacer * 39;
+  }
+
+  .block__heading {
+    @include media-breakpoint-up(lg) {
+      margin-bottom: $spacer * -14;
+    }
+
+    @include media-breakpoint-up(xl) {
+      margin-bottom: $spacer * -17;
+    }
+  }
+
   .timeline-list {
     @include media-breakpoint-up(lg) {
-      width: 70%;
+      width: 48%;
       margin: auto;
+      transform: rotate(-90deg);
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 49%;
+    }
+  }
+
+  .wrapper-list {
+    @include media-breakpoint-up(lg) {
+      transform: scaleY(-1);
     }
   }
 
   .timeline-item {
     .views-field-nothing {
-      padding: $spacer / 2 0;
-      color: $primary;
-      font-weight: $font-weight-bold;
-      font-size: $font-size-lg;
+      .timeline-item-desctiption {
+        padding: $spacer / 2 0;
+        color: $primary;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-lg;
+
+        @include media-breakpoint-up(lg) {
+          height: $spacer * 4;
+        }
+      }
 
       @include media-breakpoint-up(lg) {
         font-size: $font-size-lg * 1.1;
+        max-width: 184px;
+        transform: rotate(90deg);
+        text-align: left;
+
+        .field-content {
+          display: block;
+          transform: scaleY(-1);
+        }
+      }
+
+      @include media-breakpoint-up(xl) {
+        max-width: 242px;
       }
     }
 

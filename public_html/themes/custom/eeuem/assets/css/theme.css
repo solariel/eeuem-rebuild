@@ -945,15 +945,61 @@
 }
 
 @media (min-width: 62rem) {
-  /* line 5, sources/sass/eeuem/theme/block/_timeline.scss */
-  .block--views-block-timeline-block-timeline .timeline-list {
-    width: 70%;
-    margin: auto;
+  /* line 1, sources/sass/eeuem/theme/block/_timeline.scss */
+  .block--views-block-timeline-block-timeline {
+    max-height: 30rem;
+    overflow: hidden;
   }
 }
 
-/* line 13, sources/sass/eeuem/theme/block/_timeline.scss */
-.block--views-block-timeline-block-timeline .timeline-item .views-field-nothing {
+@media (min-width: 75rem) {
+  /* line 1, sources/sass/eeuem/theme/block/_timeline.scss */
+  .block--views-block-timeline-block-timeline {
+    max-height: 39rem;
+  }
+}
+
+@media (min-width: 62rem) {
+  /* line 14, sources/sass/eeuem/theme/block/_timeline.scss */
+  .block--views-block-timeline-block-timeline .block__heading {
+    margin-bottom: -14rem;
+  }
+}
+
+@media (min-width: 75rem) {
+  /* line 14, sources/sass/eeuem/theme/block/_timeline.scss */
+  .block--views-block-timeline-block-timeline .block__heading {
+    margin-bottom: -17rem;
+  }
+}
+
+@media (min-width: 62rem) {
+  /* line 24, sources/sass/eeuem/theme/block/_timeline.scss */
+  .block--views-block-timeline-block-timeline .timeline-list {
+    width: 48%;
+    margin: auto;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+}
+
+@media (min-width: 75rem) {
+  /* line 24, sources/sass/eeuem/theme/block/_timeline.scss */
+  .block--views-block-timeline-block-timeline .timeline-list {
+    width: 49%;
+  }
+}
+
+@media (min-width: 62rem) {
+  /* line 36, sources/sass/eeuem/theme/block/_timeline.scss */
+  .block--views-block-timeline-block-timeline .wrapper-list {
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+  }
+}
+
+/* line 44, sources/sass/eeuem/theme/block/_timeline.scss */
+.block--views-block-timeline-block-timeline .timeline-item .views-field-nothing .timeline-item-desctiption {
   padding: 0.5rem 0;
   color: #1f3854;
   font-weight: 700;
@@ -961,13 +1007,37 @@
 }
 
 @media (min-width: 62rem) {
-  /* line 13, sources/sass/eeuem/theme/block/_timeline.scss */
-  .block--views-block-timeline-block-timeline .timeline-item .views-field-nothing {
-    font-size: 1.375rem;
+  /* line 44, sources/sass/eeuem/theme/block/_timeline.scss */
+  .block--views-block-timeline-block-timeline .timeline-item .views-field-nothing .timeline-item-desctiption {
+    height: 4rem;
   }
 }
 
-/* line 24, sources/sass/eeuem/theme/block/_timeline.scss */
+@media (min-width: 62rem) {
+  /* line 43, sources/sass/eeuem/theme/block/_timeline.scss */
+  .block--views-block-timeline-block-timeline .timeline-item .views-field-nothing {
+    font-size: 1.375rem;
+    max-width: 11.5rem;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    text-align: left;
+  }
+  /* line 61, sources/sass/eeuem/theme/block/_timeline.scss */
+  .block--views-block-timeline-block-timeline .timeline-item .views-field-nothing .field-content {
+    display: block;
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+  }
+}
+
+@media (min-width: 75rem) {
+  /* line 43, sources/sass/eeuem/theme/block/_timeline.scss */
+  .block--views-block-timeline-block-timeline .timeline-item .views-field-nothing {
+    max-width: 15.125rem;
+  }
+}
+
+/* line 72, sources/sass/eeuem/theme/block/_timeline.scss */
 .block--views-block-timeline-block-timeline .timeline-item .timeline-marker {
   width: 1rem !important;
   height: 1rem !important;
