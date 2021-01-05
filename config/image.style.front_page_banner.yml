@@ -1,0 +1,23 @@
+uuid: 9419c530-8ca3-44a9-a258-274911eaa096
+langcode: en
+status: true
+dependencies: {  }
+name: front_page_banner
+label: 'Front page banner'
+effects:
+  9add9ea4-b2d4-412d-9ff7-fda7fdea9604:
+    uuid: 9add9ea4-b2d4-412d-9ff7-fda7fdea9604
+    id: image_scale
+    weight: 1
+    data:
+      width: 738
+      height: null
+      upscale: true
+  b0b15843-c901-440a-8308-2538de47f608:
+    uuid: b0b15843-c901-440a-8308-2538de47f608
+    id: image_crop
+    weight: 2
+    data:
+      width: 738
+      height: 365
+      anchor: center-center

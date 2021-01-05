@@ -1,20 +1,20 @@
-uuid: 4d21bf12-27b3-443b-b5fa-5ff5ad778e46
+uuid: 5eb4fde5-6f77-418a-83ca-38f612151c5d
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_slide_description
-    - field.storage.node.field_slide_image
-    - image.style.frontpage_slider
-    - node.type.slide
+    - field.storage.node.field_link
+    - field.storage.node.field_teaser_image
+    - image.style.front_page_banner
+    - node.type.banners
   module:
     - image
+    - link
     - node
     - slick_views
-    - text
     - user
-id: frontpage_slider
-label: 'Frontpage slider'
+id: front_page_banners
+label: 'Front page banners'
 module: views
 description: ''
 tag: ''
@@ -55,28 +55,27 @@ display:
       pager:
         type: none
         options:
+          items_per_page: null
           offset: 0
       style:
         type: slick
         options:
           vanilla: false
-          optionset: frontpage_slider
+          optionset: banners_carousel
           skin: ''
           layout: ''
           caption:
-            title: '0'
-            field_slide_description: '0'
-            field_slide_image: '0'
+            field_link: field_link
+            field_teaser_image: '0'
           optionset_thumbnail: ''
           skin_thumbnail: ''
           thumbnail_position: ''
-          thumbnail_caption: ''
           grid: null
           grid_medium: null
           grid_small: null
           visible_items: null
           preserve_keys: false
-          image: field_slide_image
+          image: field_teaser_image
           thumbnail: ''
           overlay: ''
           title: ''
@@ -99,137 +98,10 @@ display:
       row:
         type: fields
       fields:
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: false
-            ellipsis: false
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: false
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          entity_type: node
-          entity_field: title
-          plugin_id: field
-        field_slide_description:
-          id: field_slide_description
-          table: node__field_slide_description
-          field: field_slide_description
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: text_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_slide_image:
-          id: field_slide_image
-          table: node__field_slide_image
-          field: field_slide_image
+        field_teaser_image:
+          id: field_teaser_image
+          table: node__field_teaser_image
+          field: field_teaser_image
           relationship: none
           group_type: group
           admin_label: ''
@@ -277,8 +149,75 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: frontpage_slider
+            image_style: front_page_banner
             image_link: ''
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_link:
+          id: field_link
+          table: node__field_link
+          field: field_link
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: uri
+          type: link
+          settings:
+            trim_length: 80
+            url_only: false
+            url_plain: false
+            rel: nofollow
+            target: _blank
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -309,7 +248,7 @@ display:
           table: node_field_data
           field: type
           value:
-            slide: slide
+            banners: banners
           entity_type: node
           entity_field: type
           plugin_id: bundle
@@ -317,32 +256,24 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       sorts:
-        field_weight_value:
-          id: field_weight_value
-          table: node__field_weight
-          field: field_weight_value
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          order: DESC
+          entity_type: node
+          entity_field: created
+          plugin_id: date
           relationship: none
           group_type: group
           admin_label: ''
-          order: ASC
           exposed: false
           expose:
             label: ''
-          plugin_id: standard
-      title: 'Frontpage slider'
+          granularity: second
+      title: 'Front page banners'
       header: {  }
-      footer:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content: '<div class="selection-committee">Selection committee: (099) 105-27-71, (098) 340-10-36, (063) 799-42-76</div>'
-          plugin_id: text_custom
+      footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
@@ -356,11 +287,11 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_slide_description'
-        - 'config:field.storage.node.field_slide_image'
-  block_frontpage_slider:
+        - 'config:field.storage.node.field_link'
+        - 'config:field.storage.node.field_teaser_image'
+  block_fp_banners:
     display_plugin: block
-    id: block_frontpage_slider
+    id: block_fp_banners
     display_title: Block
     position: 1
     display_options:
@@ -374,5 +305,5 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_slide_description'
-        - 'config:field.storage.node.field_slide_image'
+        - 'config:field.storage.node.field_link'
+        - 'config:field.storage.node.field_teaser_image'

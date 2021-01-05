@@ -1,0 +1,21 @@
+#block-socialnimerezhi {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  padding: 0.5rem;
+  border-bottom-left-radius: 9px;
+  border-top-left-radius: 9px;
+  background: $body-bg;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+  a {
+    display: block;
+    width: 32px;
+    margin-bottom: $spacer * 0.35;
+
+    img {
+      display: block;
+      max-width: 100%
+    }
+  }
+}

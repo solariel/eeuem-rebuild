@@ -6,7 +6,9 @@ features:
 logo:
   use_default: true
 favicon:
-  use_default: true
+  use_default: false
+  path: 'public://logo.png'
+  mimetype: image/png
 container:
   type: 'no'
 skin:

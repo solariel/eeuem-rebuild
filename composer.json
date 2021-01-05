@@ -123,6 +123,8 @@
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
         "drupal/responsive_menu": "^4.2",
+        "drupal/simple_gmap": "^3.0",
+        "drupal/simple_timeline": "^1.2",
         "drupal/slick": "^2.2",
         "drupal/slick_views": "^2.3",
         "drupal/styleguide": "^1.0@alpha",
@@ -203,7 +205,6 @@
                 "2824086": "https://www.drupal.org/files/issues/2018-06-22/language-url-detection-2824086-9.patch"
             },
             "drupal/responsive_menu" : {
-                "3153145": "https://www.drupal.org/files/issues/2020-06-19/fix_chrome_bug-3153145-11.patch",
                 "fix-library-path": "patches/mmenu-fix-path.patch"
             }
         }

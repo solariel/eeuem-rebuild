@@ -1,0 +1,29 @@
+.block--views-block-timeline-block-timeline {
+  @include make-col-ready();
+  @include make-col(12);
+
+  .timeline-list {
+    @include media-breakpoint-up(lg) {
+      width: 70%;
+      margin: auto;
+    }
+  }
+
+  .timeline-item {
+    .views-field-nothing {
+      padding: $spacer / 2 0;
+      color: $primary;
+      font-weight: $font-weight-bold;
+      font-size: $font-size-lg;
+
+      @include media-breakpoint-up(lg) {
+        font-size: $font-size-lg * 1.1;
+      }
+    }
+
+    .timeline-marker {
+      width: 1rem !important;
+      height: 1rem !important;
+    }
+  }
+}

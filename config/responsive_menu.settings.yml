@@ -23,3 +23,4 @@ use_polyfills: true
 _core:
   default_config_hash: okIKWEN1iQUpeyr_635riDarUc-QmUOSwZ4nbJrYjTU
 modify_viewport: true
+use_bootstrap: false

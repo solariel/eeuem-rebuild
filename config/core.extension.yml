@@ -58,6 +58,8 @@ module:
   responsive_image: 0
   responsive_menu: 0
   serialization: 0
+  simple_gmap: 0
+  simple_timeline: 0
   slick: 0
   slick_ui: 0
   slick_views: 0

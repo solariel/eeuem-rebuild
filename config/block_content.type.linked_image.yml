@@ -1,0 +1,8 @@
+uuid: 998d2d09-5664-462b-8156-a55224777d5f
+langcode: en
+status: true
+dependencies: {  }
+id: linked_image
+label: 'Linked image'
+revision: 0
+description: ''

@@ -1,0 +1,6 @@
+display:
+  default:
+    display_options:
+      footer:
+        area_text_custom:
+          content: '<div class="selection-committee">Приймальна комісія: (099) 105-27-71, (098) 340-10-36, (063) 799-42-76</div>'

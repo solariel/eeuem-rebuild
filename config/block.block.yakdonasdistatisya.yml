@@ -1,0 +1,31 @@
+uuid: 81586d8d-46d5-44b5-9301-2f344c3c902c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:linked_image:9c9a68d8-d4b5-4e81-907a-05dca5216012'
+  module:
+    - block_content
+    - system
+  theme:
+    - eeuem
+id: yakdonasdistatisya
+theme: eeuem
+region: content_bottom
+weight: -4
+provider: null
+plugin: 'block_content:9c9a68d8-d4b5-4e81-907a-05dca5216012'
+settings:
+  id: 'block_content:9c9a68d8-d4b5-4e81-907a-05dca5216012'
+  label: 'Як до нас дістатися'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

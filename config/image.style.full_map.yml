@@ -1,0 +1,23 @@
+uuid: f6ff320a-93d6-4199-a3cb-2ab5ac4e550b
+langcode: en
+status: true
+dependencies: {  }
+name: full_map
+label: 'Full map'
+effects:
+  a41ac6fc-b1ae-4b73-b519-652800568220:
+    uuid: a41ac6fc-b1ae-4b73-b519-652800568220
+    id: image_scale
+    weight: 1
+    data:
+      width: 1920
+      height: null
+      upscale: true
+  e0d3b4cb-01ff-46cc-90df-668bb065ec1b:
+    uuid: e0d3b4cb-01ff-46cc-90df-668bb065ec1b
+    id: image_crop
+    weight: 2
+    data:
+      width: 1920
+      height: 450
+      anchor: center-center

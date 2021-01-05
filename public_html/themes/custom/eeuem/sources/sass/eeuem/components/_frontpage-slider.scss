@@ -70,65 +70,15 @@
     }
   }
 
-  .slick-arrow {
-    position: absolute;
-    top: 50%;
-    width: 32px;
-    height: 55px;
-    transform: translate(0, -50%);
-    font-size: 0;
 
-    &:focus, &:active, &:focus:active {
-      outline: none;
-      border: none;
-    }
-  }
 
-  .slick-prev {
-    background: url("../images/arrow-left.png");
-    left: 1rem;
-  }
-
-  .slick-next {
-    background: url("../images/arrow-right.png");
-    right: 1rem;
-  }
-
-  .slick-dots {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    transform: translate(-50%, 0);
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-
-    li {
-      display: inline-block;
-
-      button {
-        font-size: 0;
-        width: 1rem;
-        height: 1rem;
-        background-color: $light;
-        opacity: 50%;
-        border-radius: 50%;
-        margin: 0 0.5rem;
-
-        &:focus, &:active, &:focus:active {
-          outline: none;
-          border: none;
-        }
-      }
-
-      &.slick-active button {
-        width: 1.2rem;
-        height: 1.2rem;
-        opacity: 100%;
-      }
-    }
+  .selection-committee {
+    padding: $spacer / 2;
+    background: $primary;
+    color: palette-color('text', 'alternative');
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-lg;
   }
 }
