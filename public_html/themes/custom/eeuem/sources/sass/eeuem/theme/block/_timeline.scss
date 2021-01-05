@@ -53,7 +53,7 @@
       }
 
       @include media-breakpoint-up(lg) {
-        font-size: $font-size-lg * 1.1;
+        font-size: $font-size-base;
         max-width: 184px;
         transform: rotate(90deg);
         text-align: left;

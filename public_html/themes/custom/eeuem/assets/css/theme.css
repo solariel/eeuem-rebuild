@@ -1016,7 +1016,7 @@
 @media (min-width: 62rem) {
   /* line 43, sources/sass/eeuem/theme/block/_timeline.scss */
   .block--views-block-timeline-block-timeline .timeline-item .views-field-nothing {
-    font-size: 1.375rem;
+    font-size: 1rem;
     max-width: 11.5rem;
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
